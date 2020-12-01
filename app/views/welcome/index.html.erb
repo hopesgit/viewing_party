@@ -2,4 +2,14 @@
 
 <p>Your favorite destination for watching movies with friends! Register or sign in to get started.</p>
 
+<%= form_tag "/", method: :post do %>
+  <%= label_tag :email, "Email" %>
+  <%= text_field_tag :email %>
+
+  <%= label_tag :password, "Password" %>
+  <%= password_field_tag :password %>
+
+  <%= submit_tag "Sign In" %>
+<% end %>
+
 <%= link_to "New to Viewing Party? Register Here", '/register' %>
