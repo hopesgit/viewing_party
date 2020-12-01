@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # Users
   get '/register', to: 'users#new'
+  post '/register', to: 'users#create'
   get '/dashboard', to: 'dashboard#show'
 
   # Sessions
