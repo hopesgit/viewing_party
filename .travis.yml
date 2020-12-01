@@ -10,7 +10,6 @@ deploy:
   provider: heroku
   api_key:
     secure: ZJ8L+vU7tgSptVveg+yAJRHkIUCHvOZxPJPJ5lF7pHjl39OsJsSMaiuy77Cv/kLNsV6UPVGLmU4oXCdTrw8PNzcgkkOK4XIIq3xvb+JCxK/J5J0D6lTelUCXku5cQQB/PG3TSvgnMMXfjq1OC8Wuu1yg7tH9Txzonp675EIUUV0ch80CgVg+pHiBjDad4VgaSkIOcvfkV7OSo7oCjQ/ZM+JzLLBTiBL+xgr5fmlm7uafrC83pSkV4FpKWUsHz7Kbpxg3yISOVPMYI/b0ebRoTxHn+RfrFgmjrKvb7vqGfxLJBlEkVk0KEorYvBnbSpRe35Y8FXFZXA3pQxJ+t8JOhhLZauA4xlB+zNzg3jzFLh8pgbAw5EIbfrrll8XjxyNAROXmACiAkkCnU4QCnA9Q0gf8xQqvDle1hJ3a7mHY5NDBL11M06YJnUeeVNZaYmXtrsqg10M+//E1lNYA2H6Bfz0L/GsW6qmPjQnZn/hdhv/BukN8URT/1ZayVRwe0/rmlxRACuuiK+PBO7O1TNA9EMuy/5eJ4dht1wae2vaZU9tD5uBD/oPjJ1aMEpFYYePDDNfQXfOGiEzvlEvvaGNG4nIiMThX8sik1u5RPcjLRWzh9LdGOScQalPRMkB+NuMQwE9pvZ5brnNjY25J9yCALZb/0NiYiww2TYdnV3atDKI=
-  branches:
-    only: main
+  on: main
   app: viewing-party-thj
   run: rails db:migrate
