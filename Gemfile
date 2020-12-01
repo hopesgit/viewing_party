@@ -21,7 +21,6 @@ group :development, :test do
   gem 'travis'
   gem 'rubocop', '0.93.1'
   gem 'rubocop-rails'
-  gem 'rubocop-rspec'
 end
 
 group :development do
