@@ -13,9 +13,7 @@ describe "As a visitor" do
       expect(page).to have_content("Your favorite destination for watching movies with friends! Register or sign in to get started.")
     end
 
-    it "There's a form to log in and a link to register" do
-      expect(page).to have_link("New to Viewing Party? Register Here")
-
+    it "There's a form to log in" do
       fill_in("Email", with: "hope@example.com")
       fill_in("Password", with: "Password")
       expect(page).to have_field("Email", with: "hope@example.com" )
@@ -23,6 +21,13 @@ describe "As a visitor" do
       click_button "Sign In"
 
       expect(current_path).to eq("/dashboard")
+    end
+
+    it "There's a link to register" do
+      expect(page).to have_link("New to Viewing Party? Register Here")
+
+      click_link("New to Viewing Party? Register Here")
+      expect(current_path).to eq("/register")
     end
   end
 end
