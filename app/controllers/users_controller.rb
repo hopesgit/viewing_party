@@ -4,10 +4,16 @@ class UsersController < ApplicationController
   end
 
   def create
-    new_user = User.create!(user_params)
-    flash[:success] = "You are now registered!"
-    session[:user_id] = new_user.id
-    redirect_to '/dashboard'
+    new_user = User.new(user_params)
+
+    if new_user.save
+      flash[:success] = "You are now registered!"
+      session[:user_id] = new_user.id
+      redirect_to '/dashboard'
+    else
+      flash[:error] = new_user.errors.full_messages.to_sentence
+      render :new
+    end
   end
 
   private
