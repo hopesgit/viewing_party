@@ -39,7 +39,7 @@ describe "As a visitor" do
       expect(page).to have_content("Password confirmation doesn't match Password")
     end
 
-    it 'usernname can not be blank' do 
+    it 'usernname can not be blank' do
       fill_in 'user[username]', with: ''
       fill_in 'user[email]', with: 'Example@email.com'
       fill_in 'user[password]', with: 'Password'
@@ -51,7 +51,7 @@ describe "As a visitor" do
       expect(page).to have_content("Username can't be blank")
     end
 
-    it 'email can not be blank' do 
+    it 'email can not be blank' do
       fill_in 'user[username]', with: 'Joe'
       fill_in 'user[email]', with: ''
       fill_in 'user[password]', with: 'Password'
@@ -63,7 +63,7 @@ describe "As a visitor" do
       expect(page).to have_content("Email can't be blank")
     end
 
-    it 'password can not be blank' do 
+    it 'password can not be blank' do
       fill_in 'user[username]', with: 'Joe'
       fill_in 'user[email]', with: 'Example@email.com'
       fill_in 'user[password]', with: ''
@@ -75,7 +75,7 @@ describe "As a visitor" do
       expect(page).to have_content("Password can't be blank")
     end
 
-   it 'usernname must be unique' do 
+   it 'usernname must be unique' do
       User.create(username: 'Joe', email: 'hi@example.com', password: 'cool')
 
       fill_in 'user[username]', with: 'Joe'
@@ -89,7 +89,7 @@ describe "As a visitor" do
       expect(page).to have_content('Username has already been taken')
     end
 
-  it 'usernname must be unique' do 
+  it 'usernname must be unique' do
       User.create(username: 'John', email: 'Example@email.com', password: 'cool')
 
       fill_in 'user[username]', with: 'Joe'
