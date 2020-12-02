@@ -1,10 +1,8 @@
 class DashboardController < ApplicationController
   # before_action :require_user
 
-  def show
+  def show; end
 
-  end
-  
   # private
   # def require_user
   #
