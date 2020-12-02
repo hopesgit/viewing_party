@@ -39,9 +39,8 @@ describe "As a visitor" do
     it "Can't log in with bad credentials" do
       fill_in("Email", with: "#{@user1.email}")
       fill_in("Password", with: "0")
-      save_and_open_page
+
       click_button "Sign In"
-      save_and_open_page
 
       expect(current_path).to_not eq("/dashboard")
       expect(page).to have_content("Email or Password doesn't match our records.")
