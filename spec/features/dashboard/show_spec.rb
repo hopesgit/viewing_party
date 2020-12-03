@@ -62,6 +62,18 @@ describe 'As an authenticated User' do
       end
     end
 
+    it 'Should create a mutual friendship' do
+
+      within ('#friends') do
+        fill_in "Friend's Email", with: @friend.email
+        expect(page).to have_field("Friend's Email", with: @friend.email)
+        click_button("Add Friend")
+      end
+
+      expect(@user.friends).to eq([@friend])
+      expect(@friend.friends).to eq([@user])
+    end
+
     it "Can not add a User to Friends that doesn't exist" do
 
       within ('#friends') do
