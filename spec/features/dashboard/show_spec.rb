@@ -9,7 +9,7 @@ describe 'As an authenticated User' do
     #@party = ViewingParty.create(host: #@user.id, guest: [@friend.id], movie: #@movie[:title])
     visit dashboard_path
   end
-  describe 'When i visit "/dashboard"' do
+  describe 'When I visit "/dashboard"' do
 
     it 'Should have a message welcoming the User' do
       expect(page).to have_content("Welcome #{@user.username}")
