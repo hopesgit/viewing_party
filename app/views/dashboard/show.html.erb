@@ -10,10 +10,10 @@
     <%= f.submit "Add Friend" %>
   <% end %>
   <section>
-    <% if current_user.friends.empty? %>
+    <% if @friends.empty? %>
       <p> You currently have no Friends </p>
     <% else %>
-      <% current_user.friends.each do |friend| %>
+      <% @friends.each do |friend| %>
         <div id='friend-<%= friend.id %>'>
           <%= friend.username %>
         </div>
