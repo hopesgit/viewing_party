@@ -1,0 +1,7 @@
+<h1>Welcome <%= current_user.username %>!</h1>
+
+<%@list_of_top_movies.each do |movie|%>
+  <section id="movie-<%=movie[:id]%>">
+    <p><%=link_to "#{movie[:original_title]}", "/movies/#{movie[:id]}"%> Vote Average: <%=movie[:vote_average]%><p>
+  </section>
+<% end %>
