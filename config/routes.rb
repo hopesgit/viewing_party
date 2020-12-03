@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   post '/', to: 'sessions#create'
 
   # Movies
-  get '/discover', to: 'movies#index'
+  get '/discover', to: 'discover#index'
 
 end
