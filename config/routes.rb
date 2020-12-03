@@ -6,10 +6,11 @@ Rails.application.routes.draw do
   get '/register', to: 'users#new'
   post '/register', to: 'users#create', as: 'users'
   get '/dashboard', to: 'dashboard#show'
-
+  post '/dashboard', to: 'friendships#create'
   # Sessions
   post '/', to: 'sessions#create'
 
   # Movies
-  get '/discover', to: 'movies#index' 
+  get '/discover', to: 'movies#index'
+
 end
