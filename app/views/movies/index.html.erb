@@ -1,6 +1,6 @@
 <h1>Welcome <%= current_user.username %>!</h1>
 
-<% @list_of_top_movies.each do |movie| %>
+<% @movies.each do |movie| %>
   <ul class="movie">
     <li class="title"><%= link_to "#{movie[:original_title]}", "/movies/#{movie[:id]}" %></li>
     <li class="rating">Vote Average: <%=movie[:vote_average] %></li>

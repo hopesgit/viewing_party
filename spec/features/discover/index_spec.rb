@@ -13,12 +13,12 @@ describe "As a user" do
       expect(page).to have_content("OR")
     end
 
-    it "when I click that button, it takes me to a results page" do
+    it "when I click that button, it takes me to a results page", :vcr do
       click_button("Find Top Rated Movies")
       expect(current_path).to eq(movies_path)
     end
 
-    it "has a button and field to search for movies by name" do
+    it "has a button and field to search for movies by name", :vcr do
       expect(page).to have_field(:movie_title)
       expect(page).to have_button("Find Movies")
     end
