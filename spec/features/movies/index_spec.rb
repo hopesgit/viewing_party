@@ -42,8 +42,7 @@ describe "As a user" do
       within(first(".movie")) do
         click_link("Gabriel's Inferno Part III")
       end
-binding.pry
-      expect(current_path).to eq('/movies/')
+      expect(current_path).to eq('/movies/761053')
     end
   end
 end
