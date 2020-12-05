@@ -1,0 +1,17 @@
+<%= @movie[:name] %>
+
+<%= button_to "Create Viewing Party for Movie", '/viewing_party/new' %>
+
+<section class="general-information">
+  <%= binding.pry %>
+    <%= @movie[:vote_average] %>
+    <%= @movie[:runtime] %>
+    <%= @movie[:genres] %>
+</section>
+<section class="summary">
+  <%= @movie[:overview] %>
+</section>
+<section class="cast">
+  <%= @credits[:cast].each do |member| %>
+  <%  end  %>
+</section>
