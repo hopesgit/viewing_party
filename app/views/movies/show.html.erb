@@ -8,10 +8,22 @@
     <%= @movie[:runtime] %>
     <%= @movie[:genres] %>
 </section>
+
 <section class="summary">
   <%= @movie[:overview] %>
 </section>
+
 <section class="cast">
-  <%= @credits[:cast].each do |member| %>
+  <%= @cast.each do |member| %>
+  <%= "#{member[:name]} as #{member[:character]}" %>
   <%  end  %>
+</section>
+
+<section class="reviews">
+  <%= @reviews.each do |review| %>
+    <div class="review">
+      <%= review[:author] %>
+      <%= review[:content] %>
+    <% end %>
+    </div>
 </section>
