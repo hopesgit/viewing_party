@@ -16,7 +16,7 @@ describe "As a User" do
     end
 
     it "Has movie details: Title, Vote ANG, Runtime, Genere's, Summary, first 10 cast members, Review count w author and info.", :vcr do
-
+      binding.pry
       within(first(".movie")) do
         click_link "Gabriel's Inferno Part III"
       end
