@@ -8,7 +8,7 @@ RSpec.describe "User can see top 40 movies", type: :feature do
   end
 
   scenario "When a user visit's /movies" do
-    VCR.use_cassette('house_member_search') do
+    VCR.use_cassette('top_rated_40_search') do
       click_on 'Find Top Rated Movies'
       expect(page).to have_current_path(movies_path)
 
