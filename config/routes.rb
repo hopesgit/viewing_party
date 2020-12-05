@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   # Movies
   get '/discover', to: 'discover#index'
   get '/movies', to: 'movies#index'
+  get '/movies/:id', to: 'movies#show'
 
 end
