@@ -7,4 +7,9 @@ class MoviesController < ApplicationController
       @movies = api.get_top_rated
     end
   end
+
+  def show
+    api = MovieAPIService.new
+    @movie = api.movie_details(params[:id])
+  end
 end

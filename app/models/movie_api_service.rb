@@ -34,4 +34,9 @@ class MovieAPIService
     movies_from_search << find_movies_by_title(search, 2)
     movies_from_search.flatten
   end
+
+  def movie_details(id)
+    response = conn.get("movie/#{id}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end
