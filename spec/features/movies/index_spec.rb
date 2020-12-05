@@ -18,18 +18,22 @@ describe "As a user" do
     end
 
     it "has a field to type in a title and search by that", :vcr do
-      # within(first(".movie")) do
-      #   within(".title") do
-      #     expect(page).to have_content("Gabriel's Inferno Part III")
-      #   end
-      # end
+      VCR.use_cassette("top_rated_40_search") do
+        VCR.use_cassette("search_movies_by_keyword_search") do
+          within(first(".movie")) do
+            within(".title") do
+              expect(page).to have_content("Gabriel's Inferno Part III")
+            end
+          end
 
-      fill_in(:movie_title, with: "down")
-      click_button("Find Movies")
+          fill_in(:movie_title, with: "down")
+          click_button("Find Movies")
 
-      within(first(".movie")) do
-        within(".title") do
-          expect(page).to_not have_content("Gabriel's Inferno Part III")
+          within(first(".movie")) do
+            within(".title") do
+              expect(page).to have_content("Upside-Down Magic")
+            end
+          end
         end
       end
     end
