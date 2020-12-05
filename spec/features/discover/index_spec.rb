@@ -18,9 +18,15 @@ describe "As a user" do
       expect(current_path).to eq(movies_path)
     end
 
-    it "has a button and field to search for movies by name", :vcr do
+    it "has a button and field to search for movies by name" do
       expect(page).to have_field(:movie_title)
       expect(page).to have_button("Find Movies")
+    end
+
+    it "has a field for me to fill out and a button that searches for movie titles", :vcr do
+      fill_in(:movie_title, with: "The Godfather")
+      click_button("Find Movies")
+      expect(current_path).to eq(movies_path)
     end
   end
 end
