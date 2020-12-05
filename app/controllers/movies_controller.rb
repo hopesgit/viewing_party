@@ -11,5 +11,7 @@ class MoviesController < ApplicationController
   def show
     api = MovieAPIService.new
     @movie = api.movie_details(params[:id])
+    @cast = api.movie_cast(params[:id])
+    @reviews = api.movie_reviews(params[:id])
   end
 end
