@@ -37,5 +37,13 @@ describe "As a user" do
         end
       end
     end
+
+    it "Each Title is a link to that movies detail page", :vcr do
+      within(first(".movie")) do
+        click_link("Gabriel's Inferno Part III")
+      end
+binding.pry
+      expect(current_path).to eq('/movies/')
+    end
   end
 end
