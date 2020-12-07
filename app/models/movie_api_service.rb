@@ -47,6 +47,6 @@ class MovieAPIService
 
   def movie_reviews(id)
     response = conn.get("movie/#{id}/reviews")
-    JSON.parse(response.body, symbolize_names: true)
+    JSON.parse(response.body, symbolize_names: true)[:results]
   end
 end
