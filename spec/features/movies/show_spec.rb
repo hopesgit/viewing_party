@@ -7,6 +7,7 @@ describe "As a User" do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
       visit movies_path
     end
+
     it "Has a button to create a viewing party", :vcr do
       click_on 'The Godfather'
 
