@@ -1,6 +1,6 @@
 
 <h1><%= @movie[:original_title] %></h1>
-<%= button_to "Create Viewing Party for Movie", '/viewing_party/new' %>
+<%= button_to "Create Viewing Party for Movie", '/viewing_party/new', method: :get %>
 <br>
 
 <section class="general-information">
@@ -15,14 +15,14 @@
 
 <section class="summary">
   <h3>Summary</h3>
-  <%= @movie[:overview] %>
+  <p id="movie-summary"><%= @movie[:overview] %></p>
 </section>
 <br>
 
 <section class="cast">
   <h3>Cast</h3>
   <% @cast.each do |member| %>
-    <li><%= "#{member[:name]} as #{member[:character]}" %></li>
+    <li id="cast-member"><%= "#{member[:name]} as #{member[:character]}" %></li>
   <%  end  %>
 </section>
 <br>
@@ -31,9 +31,9 @@
   <h3>Reviews</h3>
   <% @reviews.each do |review| %>
     <h4>Author:</h4>
-    <p><%= review[:author] %></p>
+    <p class="review-author"><%= review[:author] %></p>
     <h4>Review:</h4>
-    <p><%= review[:content] %></p>
+    <p class="review-content"><%= review[:content] %></p>
     <br>
   <%  end  %>
 </section>

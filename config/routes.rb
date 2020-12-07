@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   post '/register', to: 'users#create', as: 'users'
   get '/dashboard', to: 'dashboard#show'
   post '/dashboard', to: 'friendships#create'
+
   # Sessions
   post '/', to: 'sessions#create'
 
@@ -15,4 +16,6 @@ Rails.application.routes.draw do
   get '/movies', to: 'movies#index'
   get '/movies/:id', to: 'movies#show'
 
+  # Viewing Party
+  get '/viewing_party/new', do: 'viewing_party#new' 
 end
