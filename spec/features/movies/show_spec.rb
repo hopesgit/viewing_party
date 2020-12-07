@@ -20,9 +20,9 @@ describe "As a User" do
       expect(page).to have_content("The Godfather")
 
       within('.general-information') do
-        expect(page).to have_content("")
-        expect(page).to have_content("")
-        expect(page).to have_content("")
+        expect(page).to have_content("8.7")
+        expect(page).to have_content("175")
+        expect(page).to have_content("Drama Crime")
       end
     end
   end
