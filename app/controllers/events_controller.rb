@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   def new
-    @movie = Movie.create!(movie_params)
+    @movie = Movie.find_or_create_by!(movie_params)
     @event = Event.new
   end
 

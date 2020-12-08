@@ -1,5 +1,24 @@
-<h1>Welcome <%= current_user.username %></h1>
+<div style="text-align: center">
+  <h1>Welcome <%= current_user.username %></h1>
 
-<h3>Viewing Party Details</h3>
+  <h3>Viewing Party Details</h3>
 
-<%= form_with %>
+  <h4>Movie Title: <%= @movie.title %></h4>
+
+  <%= form_with model: @event, local: true do |f| %>
+    <div>
+      <%= f.label :duration %>
+      <%= f.number_field :duration, { value: @movie.runtime, min: @movie.runtime } %>
+    </div>
+    <br>
+    
+    <div>
+      <%= f.label :start_time %>
+      <%= f.datetime_select :sart_time, ampm: true %>
+    </div>
+    <br>
+
+    <%= f.submit 'Create Party' %>
+  <% end %>
+</div>
+
