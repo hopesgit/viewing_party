@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe Movie, type: :model do
   describe "relationships" do
-    # blah
+    it { should have_many :events }
   end
 
   describe "validations" do

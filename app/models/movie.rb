@@ -4,5 +4,5 @@ class Movie < ApplicationRecord
   validates :runtime, presence: true
   validates :title, presence: true
 
-  has_many :viewing_parties
+  has_many :events
 end
