@@ -1,6 +1,8 @@
 class Movie < ApplicationRecord
-  validate_presence_of :api_key
-  validate_uniqueness_of :api_key
-  validate_presence_of :runtime
-  validate_presence_of :title
+  validates_presence_of :api_id
+  validates_uniqueness_of :api_id
+  validates_presence_of :runtime
+  validates_presence_of :title
+
+  has_many :viewing_parties
 end
