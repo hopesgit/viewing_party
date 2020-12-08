@@ -1,14 +1,14 @@
 class MovieAPIService
   def conn
     Faraday.new(
-      url: "https://api.themoviedb.org/3/",
-      params: {api_key: ENV['tmdb_api_key']}
+      url: 'https://api.themoviedb.org/3/',
+      params: { api_key: ENV['tmdb_api_key'] }
     )
   end
 
   def get_top_rated_page(page_number)
     response = conn.get('movie/top_rated') do |c|
-      c.params["page"] = page_number
+      c.params['page'] = page_number
     end
     JSON.parse(response.body, symbolize_names: true)[:results]
   end
@@ -22,8 +22,8 @@ class MovieAPIService
 
   def find_movies_by_title(search, page_number)
     response = conn.get('search/movie') do |c|
-      c.params["page"] = page_number
-      c.params["query"] = search
+      c.params['page'] = page_number
+      c.params['query'] = search
     end
     JSON.parse(response.body, symbolize_names: true)[:results]
   end

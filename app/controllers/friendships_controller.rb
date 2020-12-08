@@ -3,9 +3,9 @@ class FriendshipsController < ApplicationController
     if User.find_by(email: params["Friend's Email"])
       @friend = User.find_by(email: params["Friend's Email"])
       Friendship.create([
-        { user_id: current_user.id, friend_id: @friend.id },
-        { user_id: @friend.id, friend_id: current_user.id }
-      ])
+                          { user_id: current_user.id, friend_id: @friend.id },
+                          { user_id: @friend.id, friend_id: current_user.id }
+                        ])
     else
       flash[:error] = 'User does not exist'
     end

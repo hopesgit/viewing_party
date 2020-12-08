@@ -1,8 +1,8 @@
 class Event < ApplicationRecord
   belongs_to :user
   belongs_to :movie
-  validates_presence_of :user_id
-  validates_presence_of :movie_id
-  validates_presence_of :start_time
-  validates_presence_of :duration
+  validates :user_id, presence: true
+  validates :movie_id, presence: true
+  validates :start_time, presence: true
+  validates :duration, presence: true
 end

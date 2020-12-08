@@ -1,8 +1,8 @@
 class Movie < ApplicationRecord
-  validates_presence_of :api_id
-  validates_uniqueness_of :api_id
-  validates_presence_of :runtime
-  validates_presence_of :title
+  validates :api_id, presence: true
+  validates :api_id, uniqueness: true
+  validates :runtime, presence: true
+  validates :title, presence: true
 
   has_many :viewing_parties
 end
