@@ -89,7 +89,7 @@ describe "As a visitor" do
       expect(page).to have_content('Username has already been taken')
     end
 
-  it 'usernname must be unique' do
+  it 'email must be unique' do
       User.create(username: 'John', email: 'Example@email.com', password: 'cool')
 
       fill_in 'user[username]', with: 'Joe'
