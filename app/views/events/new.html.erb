@@ -14,7 +14,20 @@
     
     <div>
       <%= f.label :start_time %>
-      <%= f.datetime_select :sart_time, ampm: true %>
+      <%= f.datetime_select :start_time, ampm: true %>
+    </div>
+    <br>
+
+    <div>
+      <h5>Invite your friends!</h5>
+
+      <% current_user.friends.each do |friend| %>
+        <div id="friend-<%= friend.id %>">
+          <%# <%= check_box_tag :friend %1> %>  
+          <%= f.label :friend, friend.username %>  
+        </div>
+        <br>
+      <% end %>
     </div>
     <br>
 
