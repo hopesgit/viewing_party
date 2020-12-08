@@ -11,9 +11,8 @@ describe "As a User" do
     it "Has a button to create a viewing party", :vcr do
       click_on 'The Godfather'
 
-      # expect(page).to have_button("Create Viewing Party for Movie")
       click_on 'Create Viewing Party for Movie'
-      expect(page).to have_current_path(viewing_party_new_path)
+      expect(page).to have_current_path(events_new_path)
     end
 
     it "Has movie details: Title, Vote ANG, Runtime, Genere's, Summary, first 10 cast members, Review count w author and info.", :vcr do
