@@ -27,19 +27,15 @@ RSpec.describe "Events/New", type: :feature do
         select("3", from: "event[start_time(3i)]")
         select("05 PM", from: "event[start_time(4i)]")
         select("30", from: "event[start_time(5i)]")
-        # find(:css, "friend-#{@user2.id}").set(true)
+        page.check('friend_id[]', option: @user2.id)
+        page.check('friend_id[]', option: @user3.id)
 
         click_on "Create Event"
         expect(current_path).to eq(dashboard_path)
 
-        #event = Event.last
-
         within("#viewing-parties") do
-          #binding.pry
-          save_and_open_page
           expect(page).to have_content("The Godfather")
           expect(page).to have_content("May 3, 2022, 5:30 PM")
-          expect(page).to have_content("Host Status")
         end
       end
     end
