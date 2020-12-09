@@ -17,7 +17,7 @@
       <h5>Invite your friends!</h5>
       <% current_user.friends.each do |friend| %>
         <div id="friend-<%= friend.id %>">
-          <%# <%= check_box_tag :friend %1> %>
+          <%= check_box_tag("friend_id[]", friend.id) %>
           <%= f.label :friend, friend.username %>
         </div>
         <br>
