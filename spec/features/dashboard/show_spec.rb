@@ -1,15 +1,13 @@
 require 'rails_helper'
 
 describe 'As an authenticated User' do
-  before :each do
-    @user = User.create(username: 'John', email: 'Example@email.com', password: 'cool')
-    @friend = User.create(username: 'Adam', email: 'Friend@email.com', password: '12345')
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
-    #@movie = ?
-    #@party = ViewingParty.create(host: #@user.id, guest: [@friend.id], movie: #@movie[:title])
-    visit dashboard_path
-  end
   describe 'When I visit "/dashboard"' do
+    before :each do
+      @user = User.create(username: 'John', email: 'Example@email.com', password: 'cool')
+      @friend = User.create(username: 'Adam', email: 'Friend@email.com', password: '12345')
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
+      visit dashboard_path
+    end
 
     it 'Should have a message welcoming the User' do
       expect(page).to have_content("Welcome #{@user.username}")
@@ -32,6 +30,12 @@ describe 'As an authenticated User' do
   end
 
   describe 'Dashboard: Friends' do
+    before :each do
+      @user = User.create(username: 'John', email: 'Example@email.com', password: 'cool')
+      @friend = User.create(username: 'Adam', email: 'Friend@email.com', password: '12345')
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
+      visit dashboard_path
+    end
 
     it 'There should be a text field to enter a friends email with button to "Add Friend"' do
 
@@ -84,7 +88,60 @@ describe 'As an authenticated User' do
     end
   end
 
-  describe "Dashboard: Discover Movies" do
+  describe 'User dashboard events' do
+    before :each do
+      @user1 = User.create(username: 'John', email: 'Example@email.com', password: 'cool')
+      @user2 = User.create!(username: 'jsmith', email: 'jsmith@example.com', password: 'password')
+      @user3 = User.create!(username: 'tphill', email: 'tphill@example.com', password: 'password')
+      @user4 = User.create!(username: 'crichards', email: 'crichards@example.com', password: 'password')
 
+      Friendship.create!(user_id: @user1.id, friend_id: @user2.id)
+      Friendship.create!(user_id: @user1.id, friend_id: @user3.id)
+      Friendship.create!(user_id: @user1.id, friend_id: @user4.id)
+      Friendship.create!(user_id: @user2.id, friend_id: @user1.id)
+      Friendship.create!(user_id: @user2.id, friend_id: @user3.id)
+      Friendship.create!(user_id: @user2.id, friend_id: @user4.id)
+
+      @movie1 = Movie.create!(api_id: 1, title: 'The best movie', runtime: 175) 
+      @movie2 = Movie.create!(api_id: 2, title: 'The worst movie', runtime: 120) 
+      @movie3 = Movie.create!(api_id: 3, title: 'An ok movie', runtime: 125) 
+
+      @event1 = Event.create!(user_id: @user1.id, movie_id: @movie1.id, start_time: DateTime.now, duration: 190)
+      @event2 = Event.create!(user_id: @user2.id, movie_id: @movie2.id, start_time: DateTime.now, duration: 140)
+      @event3 = Event.create!(user_id: @user3.id, movie_id: @movie3.id, start_time: DateTime.now, duration: 150)
+
+      Participant.create!(user_id: @user2.id, event_id: @event1.id)
+      Participant.create!(user_id: @user3.id, event_id: @event1.id)
+      Participant.create!(user_id: @user4.id, event_id: @event1.id)
+      Participant.create!(user_id: @user1.id, event_id: @event2.id)
+      Participant.create!(user_id: @user3.id, event_id: @event2.id)
+      Participant.create!(user_id: @user4.id, event_id: @event2.id)
+      Participant.create!(user_id: @user1.id, event_id: @event3.id)
+      Participant.create!(user_id: @user2.id, event_id: @event3.id)
+      Participant.create!(user_id: @user4.id, event_id: @event3.id)
+    end
+
+    it 'Can see all events they are hosting' do
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user3)
+      visit dashboard_path
+      
+      within('#viewing-parties') do
+        within(first('.hosting')) do
+          expect(page).to have_content('An ok movie')
+        end
+      end
+    end
+
+    it 'Can see all events invited to' do
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user3)
+      visit dashboard_path
+
+      within('#viewing-parties') do
+        within('.invited-to') do
+          expect(page).to have_content('The best movie')
+          expect(page).to have_content('The worst movie')
+        end
+      end
+    end
   end
 end
