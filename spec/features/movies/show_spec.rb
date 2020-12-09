@@ -12,12 +12,12 @@ describe "As a User" do
       click_on 'The Godfather'
 
       click_on 'Create Viewing Party for Movie'
-      expect(page).to have_current_path(events_new_path)
+      expect(current_path).to eq(events_new_path)
     end
 
     it "Has movie details: Title, Vote ANG, Runtime, Genere's, Summary, first 10 cast members, Review count w author and info.", :vcr do
       click_on 'The Godfather'
-      
+
       expect(page).to have_content("The Godfather")
 
       within('.general-information') do
@@ -31,12 +31,12 @@ describe "As a User" do
       end
 
       within('.cast') do
-        expect(page).to have_css('#cast-member', count: 10) 
+        expect(page).to have_css('#cast-member', count: 10)
       end
 
       within('.reviews') do
-        expect(page).to have_css('.review-author') 
-        expect(page).to have_css('.review-content') 
+        expect(page).to have_css('.review-author')
+        expect(page).to have_css('.review-content')
       end
     end
   end
