@@ -35,11 +35,11 @@ RSpec.describe "Events/New", type: :feature do
         #event = Event.last
 
         within("#viewing-parties") do
-          within("#host") do
-            expect(page).to have_content("The Godfather")
-            expect(page).to have_content("Date")
-            expect(page).to have_content("Host Status")
-          end
+          #binding.pry
+          save_and_open_page
+          expect(page).to have_content("The Godfather")
+          expect(page).to have_content("May 3, 2022, 5:30 PM")
+          expect(page).to have_content("Host Status")
         end
       end
     end
