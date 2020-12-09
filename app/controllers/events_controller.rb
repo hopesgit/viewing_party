@@ -1,13 +1,14 @@
 class EventsController < ApplicationController
   def new
-    @movie = Movie.find_or_create_by!(movie_params)
     binding.pry
+    #@party = Event.new
+    @movie = Movie.create(movie_params)
+    @party = Event.new
   end
 
   def create
-    @movie = Movie.first
     require 'pry'; binding.pry
-  redirect_to dashboard_path
+    redirect_to dashboard_path
   end
 
   private
@@ -25,8 +26,8 @@ class EventsController < ApplicationController
   end
 
   def date_result
-    date = event_params.values[1..3].join("-")
-    time = event_params.values[4..5].join(":")
+    date = event_params.values[0..2].join("-")
+    time = event_params.values[3..4].join(":")
     res = date + " " + time
     res.to_datetime
   end
