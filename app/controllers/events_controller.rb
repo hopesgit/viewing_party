@@ -6,10 +6,11 @@ class EventsController < ApplicationController
   end
 
   def create
-    #binding.pry
+# require 'pry'; binding.pry
     @movie = Movie.last
     @event = Event.new(final_params)
     if @event.save
+      add_participants(@event.id)
       redirect_to dashboard_path
     else
       render :new
@@ -35,5 +36,12 @@ class EventsController < ApplicationController
 
   def final_params
     {user_id: current_user.id, movie_id: @movie.id, start_time: date_result, duration: event_params[:duration]}
+  end
+
+  def add_participants(event_id)
+    params[:friend_id].each do |friend|
+      user = User.find(friend) 
+      Participant.create(user_id: user.id, event_id: event_id)
+    end
   end
 end
