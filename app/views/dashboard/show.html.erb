@@ -23,11 +23,9 @@
 </section>
 
 <section id='viewing-parties'>
-  <section id="host">
-
-  </section>
-
-  <section id="guest">
-
-  </section>
+    <% current_user.events.each do |event| %>
+      <%= event.movie.title %> <br>
+      <%= event.start_time.strftime("%B%e, %Y, %l:%M %p") %> <br>
+      <%= event.duration %>
+    <% end  %>
 </section>
