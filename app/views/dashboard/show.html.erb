@@ -21,11 +21,25 @@
     <% end %>
   </section>
 </section>
+<br>
 
+<h3>Viewing Parties</h3>
 <section id='viewing-parties'>
+  <div class="hosting">
+    <h4>Hosting</h4>
     <% current_user.events.each do |event| %>
+        <%= event.movie.title %> <br>
+        <%= event.start_time.strftime("%B%e, %Y, %l:%M %p") %> <br>
+      <br>
+    <% end  %>
+  </div>
+
+  <div class="invited-to">
+    <h4>Invited To</h4>
+    <% current_user.events_invited_to.each do |event| %>
       <%= event.movie.title %> <br>
       <%= event.start_time.strftime("%B%e, %Y, %l:%M %p") %> <br>
-      <%= event.duration %>
+      <br>
     <% end  %>
+  </div>
 </section>
