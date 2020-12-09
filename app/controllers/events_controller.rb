@@ -1,14 +1,19 @@
 class EventsController < ApplicationController
   def new
-    binding.pry
-    #@party = Event.new
+    #binding.pry
     @movie = Movie.create(movie_params)
-    @party = Event.new
+    @event = Event.new
   end
 
   def create
-    require 'pry'; binding.pry
-    redirect_to dashboard_path
+    #binding.pry
+    @movie = Movie.last
+    @event = Event.new(final_params)
+    if @event.save
+      redirect_to dashboard_path
+    else
+      render :new
+    end
   end
 
   private
@@ -16,12 +21,8 @@ class EventsController < ApplicationController
   def movie_params
     params.permit(:api_id, :runtime, :title)
   end
+
   def event_params
-    #params[:event].values[1..5].join("-").to_datetime
-    #date = params[:event].values[1..3].join("-")
-    #time = params[:event].values[4..5].join(":")
-    #res = date + " " + time
-    #res.to_datetime
     params.require(:event).permit(:user_id, :movie_id, :start_time, :duration)
   end
 
@@ -30,5 +31,9 @@ class EventsController < ApplicationController
     time = event_params.values[3..4].join(":")
     res = date + " " + time
     res.to_datetime
+  end
+
+  def final_params
+    {user_id: current_user.id, movie_id: @movie.id, start_time: date_result, duration: event_params[:duration]}
   end
 end
