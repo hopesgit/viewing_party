@@ -59,3 +59,7 @@ Viewing party is an application in which users can explore movie options and cre
 * New Watch Party page
   * Choose a date/time and duration (can't be shorter than the movie's length)
   * Choose friends to invite (they have to already be registered as your friends)
+
+## Challenges/What We Learned
+
+* [Self-referential relationships](misc/screenshots/Screen Shot 2020-12-09 at 10.53.40 PM.png)
