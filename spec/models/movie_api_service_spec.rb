@@ -10,12 +10,12 @@ describe MovieAPIService, type: :class do
     end
 
     it 'get_top_rated_page(page_number)', :vcr do
-      expect(@api.get_top_rated_page(1).count).to eq(20)
-      expect(@api.get_top_rated_page(1)[0][:original_title]).to eq("Gabriel's Inferno Part III")
+      expect(@api.top_rated_page(1).count).to eq(20)
+      expect(@api.top_rated_page(1)[0][:original_title]).to eq("Gabriel's Inferno Part III")
     end
 
     it 'get_top_rated', :vcr do
-      expect(@api.get_top_rated.count).to eq(40)
+      expect(@api.top_rated.count).to eq(40)
     end
 
     it 'find_movies_by_title(search, page_number)', :vcr do

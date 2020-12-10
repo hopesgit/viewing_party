@@ -4,7 +4,7 @@ class MoviesController < ApplicationController
     @movies = if !params['movie_title'].nil?
                 api.search_movies_by_keyword(params[:movie_title])
               else
-                api.get_top_rated
+                api.top_rated
               end
   end
 

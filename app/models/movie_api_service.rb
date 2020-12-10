@@ -6,17 +6,17 @@ class MovieAPIService
     )
   end
 
-  def get_top_rated_page(page_number)
+  def top_rated_page(page_number)
     response = conn.get('movie/top_rated') do |c|
       c.params['page'] = page_number
     end
     JSON.parse(response.body, symbolize_names: true)[:results]
   end
 
-  def get_top_rated
+  def top_rated
     top_movies = []
-    top_movies << get_top_rated_page(1)
-    top_movies << get_top_rated_page(2)
+    top_movies << top_rated_page(1)
+    top_movies << top_rated_page(2)
     top_movies.flatten
   end
 

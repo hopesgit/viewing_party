@@ -1,10 +1,8 @@
 class User < ApplicationRecord
-  has_many :friendships
-  has_many :friends, through: :friendships
-  has_many :inverse_friendships, class_name: 'Friendship', foreign_key: 'friend_id'
-  has_many :inverse_friends, through: :inverse_friendships, source: :user
-  has_many :events
-  has_many :participants 
+  has_many :friendships, dependent: :delete_all
+  has_many :friends, through: :friendships, dependent: :delete_all
+  has_many :events, dependent: :delete_all
+  has_many :participants, dependent: :delete_all
 
   validates :username, uniqueness: true, presence: true
   validates :email, uniqueness: true, presence: true
@@ -14,7 +12,7 @@ class User < ApplicationRecord
 
   def events_invited_to
     participants.map do |participant|
-      Event.find(participant.event_id) 
+      Event.find(participant.event_id)
     end
   end
 end
