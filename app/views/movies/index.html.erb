@@ -1,0 +1,19 @@
+<h1>Welcome <%= current_user.username %>!</h1>
+<br>
+<div class="search">
+<section style="text-align: center"><%=button_to "Find Top Rated Movies", movies_path, method: :get%></section>
+<section style="text-align: center", id="search">
+  <%= form_with url: "/movies", local: true, method: :get do%>
+    <%= label_tag :movie_title %>
+    <%= search_field_tag :movie_title, "Search by movie title" %>
+    <%= submit_tag "Find Movies" %>
+  <% end %>
+</section>
+</div>
+
+<% @movies.each do |movie| %>
+  <ul class="movie">
+    <li class="title"><%= link_to "#{movie[:original_title]}", "/movies/#{movie[:id]}" %></li>
+    <li class="rating">Vote Average: <%=movie[:vote_average] %></li>
+  </ul>
+<% end %>

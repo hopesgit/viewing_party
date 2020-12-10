@@ -4,9 +4,19 @@ Rails.application.routes.draw do
 
   # Users
   get '/register', to: 'users#new'
-  post '/register', to: 'users#create', as: 'users' 
+  post '/register', to: 'users#create', as: 'users'
   get '/dashboard', to: 'dashboard#show'
+  post '/dashboard', to: 'friendships#create'
 
   # Sessions
   post '/', to: 'sessions#create'
+
+  # Movies
+  get '/discover', to: 'discover#index'
+  get '/movies', to: 'movies#index'
+  get '/movies/:id', to: 'movies#show'
+
+  # Viewing Party
+  get '/events/new', to: 'events#new'
+  post '/events', to: 'events#create'
 end

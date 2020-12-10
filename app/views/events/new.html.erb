@@ -1,0 +1,30 @@
+<div style="text-align: center">
+  <h1>Welcome <%= current_user.username %></h1>
+
+  <h3>Viewing Party Details</h3>
+
+
+  <%= form_with model: @event, local: true do |f| %>
+
+  <h4>Movie Title: <%= @movie.title %></h4>
+      <%= f.label :duration %>
+      <%= f.number_field :duration, { value: @movie.runtime, min: @movie.runtime } %>
+
+      <%= f.label :start_time %>
+      <%= f.datetime_select :start_time, ampm: true %>
+
+    <div>
+      <h5>Invite your friends!</h5>
+      <% current_user.friends.each do |friend| %>
+        <div id="friend-<%= friend.id %>">
+          <%= check_box_tag("friend_id[]", friend.id) %>
+          <%= f.label :friend, friend.username %>
+        </div>
+        <br>
+      <% end %>
+    </div>
+    <br>
+
+    <%= f.submit 'Create Event' %>
+  <% end %>
+</div>

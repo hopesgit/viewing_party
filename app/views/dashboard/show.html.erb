@@ -1,1 +1,45 @@
 <h1>Welcome <%= current_user.username %></h1>
+<%= button_to "Discover Movies", '/discover', method: :get %>
+
+<h3>Friends</h3>
+<section id='friends'>
+  <%= form_with local: true do |f| %>
+    <%= f.label "Friend's Email"  %>
+    <%= f.text_field "Friend's Email" %>
+
+    <%= f.submit "Add Friend" %>
+  <% end %>
+  <section>
+    <% if @friends.empty? %>
+      <p> You currently have no Friends </p>
+    <% else %>
+      <% @friends.each do |friend| %>
+        <div id='friend-<%= friend.id %>'>
+          <%= friend.username %>
+        </div>
+      <% end %>
+    <% end %>
+  </section>
+</section>
+<br>
+
+<h3>Viewing Parties</h3>
+<section id='viewing-parties'>
+  <div class="hosting">
+    <h4>Hosting</h4>
+    <% current_user.events.each do |event| %>
+        <%= event.movie.title %> <br>
+        <%= event.start_time.strftime("%B%e, %Y, %l:%M %p") %> <br>
+      <br>
+    <% end  %>
+  </div>
+
+  <div class="invited-to">
+    <h4>Invited To</h4>
+    <% current_user.events_invited_to.each do |event| %>
+      <%= event.movie.title %> <br>
+      <%= event.start_time.strftime("%B%e, %Y, %l:%M %p") %> <br>
+      <br>
+    <% end  %>
+  </div>
+</section>

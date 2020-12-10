@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'bootsnap'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt'
+gem 'figaro'
 
 group :development, :test do
   gem 'pry'
@@ -37,6 +38,8 @@ group :test do
   gem 'launchy'
   gem 'shoulda-matchers'
   gem 'simplecov'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
