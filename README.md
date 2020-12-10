@@ -63,7 +63,9 @@ Viewing party is an application in which users can explore movie options and cre
 ## Challenges/What We Learned
 
 * Self-referential relationships
-<img src="/misc/screenshots/Screen Shot 2020-12-09 at 10.53.40 PM.png"/>
+<img src="/misc/screenshots/Screen Shot 2020-12-09 at 10.53.40 PM.png" />
+
 * Calling APIs using API keys
 * How to keep API keys away from prying eyes
 * Testing API calls and page objects related to API info
+<img src="/misc/screenshots/Screen Shot 2020-12-09 at 11.17.30 PM.png" />
