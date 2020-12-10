@@ -11,7 +11,7 @@ describe "As a visitor" do
       expect(page).to have_current_path('/')
     end
 
-    it 'I can register as a new user with a username, email and password' do
+    it 'I can register as a new user with a username, email and password', :vcr do
       expect(page).to have_field('user[username]')
       expect(page).to have_field('user[email]')
       expect(page).to have_field('user[password]')
