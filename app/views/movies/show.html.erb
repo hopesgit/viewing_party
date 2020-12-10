@@ -27,6 +27,14 @@
 </section>
 <br>
 
+<h3>If you liked this movie, you may like these</h3>
+<% @similar.each do |movie| %>
+  <section class="similar">
+    <li class="similar-movie-link"><%= link_to movie[:title], "#{movie[:id]}" %></li>
+  </section>
+<% end %>
+<br>
+
 <section class="reviews">
   <h3>Reviews</h3>
   <% @reviews.each do |review| %>

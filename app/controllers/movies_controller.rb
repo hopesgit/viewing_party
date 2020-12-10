@@ -13,5 +13,6 @@ class MoviesController < ApplicationController
     @movie = api.movie_details(params[:id])
     @cast = api.movie_cast(params[:id])
     @reviews = api.movie_reviews(params[:id])
+    @similar = api.movie_similar(params[:id])
   end
 end
