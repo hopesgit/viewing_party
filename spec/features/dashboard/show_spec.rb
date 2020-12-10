@@ -9,25 +9,41 @@ describe 'As an authenticated User' do
       visit dashboard_path
     end
 
-    it 'Should have a message welcoming the User' do
+    it 'Should have a message welcoming the User', :vcr do
       expect(page).to have_content("Welcome #{@user.username}")
     end
 
-    it 'should have a button to discover movies' do
+    it 'should have a button to discover movies', :vcr do
       expect(page).to have_button('Discover Movies')
       click_button('Discover Movies')
 
       expect(current_path).to eq('/discover')
     end
 
-    it 'Has a friends section' do
+    it 'Has a friends section', :vcr do
       expect(page).to have_css('#friends')
     end
 
-    it 'Has a Viewing Party section' do
+    it 'Has a Viewing Party section', :vcr do
       expect(page).to have_css('#viewing-parties')
     end
   end
+
+  describe 'Dashboard upcoming movies' do
+    before :each do
+      @user = User.create(username: 'John', email: 'Example@email.com', password: 'cool')
+      @friend = User.create(username: 'Adam', email: 'Friend@email.com', password: '12345')
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
+      visit dashboard_path
+    end
+
+    it 'Should display upcoming movies', :vcr do
+      within(first('.upcoming-movies')) do
+        expect(page).to have_css('.upcoming-movie-link')
+      end
+    end
+  end
+
 
   describe 'Dashboard: Friends' do
     before :each do
@@ -37,7 +53,7 @@ describe 'As an authenticated User' do
       visit dashboard_path
     end
 
-    it 'There should be a text field to enter a friends email with button to "Add Friend"' do
+    it 'There should be a text field to enter a friends email with button to "Add Friend"', :vcr do
 
       within '#friends' do
         expect(page).to have_field("Friend's Email")
@@ -46,14 +62,14 @@ describe 'As an authenticated User' do
 
     end
 
-    it "If there are no friends, .firends section should have message 'You Currently Have No Friends'" do
+    it "If there are no friends, .firends section should have message 'You Currently Have No Friends'", :vcr do
 
       within('#friends') do
         expect(page).to have_content("You currently have no Friends")
       end
     end
 
-    it 'Should have a list of all friends' do
+    it 'Should have a list of all friends', :vcr do
 
       within ('#friends') do
         fill_in "Friend's Email", with: @friend.email
@@ -66,7 +82,7 @@ describe 'As an authenticated User' do
       end
     end
 
-    it 'Should create a mutual friendship' do
+    it 'Should create a mutual friendship', :vcr do
 
       within ('#friends') do
         fill_in "Friend's Email", with: @friend.email
@@ -78,7 +94,7 @@ describe 'As an authenticated User' do
       expect(@friend.friends).to eq([@user])
     end
 
-    it "Can not add a User to Friends that doesn't exist" do
+    it "Can not add a User to Friends that doesn't exist", :vcr do
 
       within ('#friends') do
         fill_in "Friend's Email", with: "wrong@email.com"
@@ -121,7 +137,7 @@ describe 'As an authenticated User' do
       Participant.create!(user_id: @user4.id, event_id: @event3.id)
     end
 
-    it 'Can see all events they are hosting' do
+    it 'Can see all events they are hosting', :vcr do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user3)
       visit dashboard_path
       
@@ -132,7 +148,7 @@ describe 'As an authenticated User' do
       end
     end
 
-    it 'Can see all events invited to' do
+    it 'Can see all events invited to', :vcr do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user3)
       visit dashboard_path
 

@@ -1,6 +1,14 @@
 <h1>Welcome <%= current_user.username %></h1>
 <%= button_to "Discover Movies", '/discover', method: :get %>
 
+<h3>Be on the look out for these upcoming movies</h3>
+<% @upcoming_movies.each do |movie| %>
+  <section class="upcoming-movies">
+    <li class="upcoming-movie-link"><%= link_to movie[:original_title], "movies/#{movie[:id]}" %></li>
+  </section>
+<% end %>
+<br>
+
 <h3>Friends</h3>
 <section id='friends'>
   <%= form_with local: true do |f| %>
@@ -10,6 +18,8 @@
     <%= f.submit "Add Friend" %>
   <% end %>
   <section>
+  <br>
+  
     <% if @friends.empty? %>
       <p> You currently have no Friends </p>
     <% else %>

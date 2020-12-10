@@ -24,7 +24,7 @@ describe "As a visitor" do
       @user1 = User.create!(username: "hopegochnour", email: "hope@example.com", password: "Password")
     end
 
-    it "There's a form to log in" do
+    it "There's a form to log in", :vcr do
       fill_in("Email", with: "hope@example.com")
       fill_in("Password", with: "Password")
       expect(page).to have_field("Email", with: "hope@example.com" )

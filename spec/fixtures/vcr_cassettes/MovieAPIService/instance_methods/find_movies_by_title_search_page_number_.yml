@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Sat, 05 Dec 2020 18:49:54 GMT
+      - Thu, 10 Dec 2020 02:28:57 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -40,13 +40,15 @@ http_interactions:
       Vary:
       - Accept-Encoding
       X-Cache:
-      - Miss from cloudfront
+      - Hit from cloudfront
       Via:
-      - 1.1 ed8294655bb258e13bfb027c25483ddb.cloudfront.net (CloudFront)
+      - 1.1 1488b4bac45e20ef7f7f89e2bdb01b4f.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN50-C2
+      - ATL56-C4
       X-Amz-Cf-Id:
-      - vXRRmB_NOXDqMi6rGxihHJzKcnkHSJ1hvRp2Y0fPy5VrSWsQVw3nLw==
+      - rLZZyM6gnisvAl9Trao3amtzNxr_yEZoIpshVkd7sEOOd6IwEFjhHA==
+      Age:
+      - '156'
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/7GWDrjxeBsh5onaYf5XHjIM9BA1.jpg","genre_ids":[28,53],"id":578189,"original_language":"en","original_title":"Black
@@ -55,113 +57,103 @@ http_interactions:
         After realizing that the murder was committed by corrupt cops, she teams up
         with the one person from her community who is willing to help her as she tries
         to escape both the criminals out for revenge and the police who are desperate
-        to destroy the incriminating footage.","popularity":74.388,"poster_path":"/1cSHEKYYP8Dpi4o1iBVd4U75FYt.jpg","release_date":"2019-10-25","title":"Black
-        and Blue","video":false,"vote_average":6.7,"vote_count":412},{"adult":false,"backdrop_path":"/hIHtyIYgBqHybOgUdoAmveipuiO.jpg","genre_ids":[28,27,878],"id":703745,"original_language":"en","original_title":"Deep
-        Blue Sea 3","overview":"Dr. Emma Collins and her team are spending their third
-        summer on the island of Little Happy studying the effect of climate change
-        on the great white sharks who come to the nearby nursery every year to give
-        birth. Along with the last two inhabitants of this former fishing village,
-        their peaceful life is disrupted when a \"scientific\" team led by her ex-boyfriend
-        and marine biologist Richard show up looking for three bull sharks who we
-        soon learn aren''t just any bull sharks.","popularity":41.323,"poster_path":"/bKthjUmxjHjvJK8FktFfQdmwP12.jpg","release_date":"2020-07-28","title":"Deep
-        Blue Sea 3","video":false,"vote_average":6.2,"vote_count":282},{"adult":false,"backdrop_path":"/ajS8zeRQGjSyhbXH0d7zcV4oDCd.jpg","genre_ids":[80,18],"id":621191,"original_language":"en","original_title":"Blue
+        to destroy the incriminating footage.","popularity":64.793,"poster_path":"/1cSHEKYYP8Dpi4o1iBVd4U75FYt.jpg","release_date":"2019-10-25","title":"Black
+        and Blue","video":false,"vote_average":6.7,"vote_count":413},{"adult":false,"backdrop_path":"/ajS8zeRQGjSyhbXH0d7zcV4oDCd.jpg","genre_ids":[80,18],"id":621191,"original_language":"en","original_title":"Blue
         Story","overview":"Blue Story is a tragic tale of a friendship between Timmy
         and Marco, two young boys from opposing postcodes. Timmy, a shy, smart, naive
         and timid young boy from Deptford, goes to school in Peckham where he strikes
         up a friendship with Marco, a charismatic, streetwise kid from the local area.
         Although from warring postcodes, the two quickly form a firm friendship until
         it is tested and they wind up on rival sides of a street war. Blue Story depicts
-        elements of Rapman''s own personal experiences and aspects of his childhood.","popularity":15.087,"poster_path":"/tCkAVKsgCMgLb5r9GP4sVvMK6MR.jpg","release_date":"2019-11-22","title":"Blue
-        Story","video":false,"vote_average":7.3,"vote_count":75},{"adult":false,"backdrop_path":"/aiwNrxTMNJMRl30fWeVmSBAyXCm.jpg","genre_ids":[80,9648,53],"id":793,"original_language":"en","original_title":"Blue
-        Velvet","overview":"The discovery of a severed human ear found in a field
-        leads a young man on an investigation related to a beautiful, mysterious nightclub
-        singer and a group of criminals who have kidnapped her child.","popularity":12.965,"poster_path":"/7hlgzJXLgyECS1mk3LSN3E72l5N.jpg","release_date":"1986-09-19","title":"Blue
-        Velvet","video":false,"vote_average":7.7,"vote_count":2031},{"adult":false,"backdrop_path":"/4FLZTeVWrp14vm5wMlSJzEghDrd.jpg","genre_ids":[18,10749],"id":46705,"original_language":"en","original_title":"Blue
+        elements of Rapman''s own personal experiences and aspects of his childhood.","popularity":15.752,"poster_path":"/tCkAVKsgCMgLb5r9GP4sVvMK6MR.jpg","release_date":"2019-11-22","title":"Blue
+        Story","video":false,"vote_average":7.2,"vote_count":76},{"adult":false,"backdrop_path":"/q7sl4qm8WlogrZ3cJxzuN8WejM1.jpg","genre_ids":[18],"id":160588,"original_language":"en","original_title":"Blue
+        Jasmine","overview":"After experiencing a traumatic misfortune, Jasmine French,
+        a wealthy woman from New York, moves to San Francisco to live with her foster
+        sister Ginger and the firm purpose of getting a new life, but she will be
+        haunted by anxiety and memories of the past.","popularity":20.644,"poster_path":"/zLdLiUJfueZBctdv8OvkmGXEHEC.jpg","release_date":"2013-07-25","title":"Blue
+        Jasmine","video":false,"vote_average":7,"vote_count":2581},{"adult":false,"backdrop_path":"/4FLZTeVWrp14vm5wMlSJzEghDrd.jpg","genre_ids":[18,10749],"id":46705,"original_language":"en","original_title":"Blue
         Valentine","overview":"Dean and Cindy live a quiet life in a modest neighborhood.
         They appear to have the world at their feet at the outset of the relationship.
         However, his lack of ambition and her retreat into self-absorption cause potentially
-        irreversible cracks in their marriage.","popularity":12.57,"poster_path":"/dc8BdKnDY5Iy28KzUGtHIXuqqFK.jpg","release_date":"2010-12-16","title":"Blue
-        Valentine","video":false,"vote_average":6.9,"vote_count":2169},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":765641,"original_language":"en","original_title":"Pink
-        + Blue","overview":"The film explores the life of a transgender man, his experiences
-        of growing up, feeling different, as well as his story of coming out. The
-        ironic film challenges the idea of gender and societies view on what it means
-        to be male or female, while pushing us to sympathize with a person who does
-        not fit into those gender norms.","popularity":14.116,"poster_path":"/az8G7phTn73zXibffq2neexSSSe.jpg","release_date":"2020-12-03","title":"Pink
-        + Blue","video":false,"vote_average":0,"vote_count":0},{"adult":false,"backdrop_path":"/3ZohISQDjkS0PtjCJss72MFaBEj.jpg","genre_ids":[53],"id":9491,"original_language":"en","original_title":"Blue
-        Steel","overview":"Megan Turner, a female rookie cop, gets involved in an
-        armed robbery that goes awry. A witness becomes obsessed with her.","popularity":11.718,"poster_path":"/nZS8nh0q3sUHgSZGIhSnTQio5rR.jpg","release_date":"1990-03-16","title":"Blue
-        Steel","video":false,"vote_average":5.8,"vote_count":193},{"adult":false,"backdrop_path":"/9vEagP8gOhE598dj5kcak1onCOa.jpg","genre_ids":[28,35,80],"id":11001,"original_language":"en","original_title":"Blue
+        irreversible cracks in their marriage.","popularity":17.133,"poster_path":"/dc8BdKnDY5Iy28KzUGtHIXuqqFK.jpg","release_date":"2010-12-16","title":"Blue
+        Valentine","video":false,"vote_average":6.9,"vote_count":2179},{"adult":false,"backdrop_path":"/hIHtyIYgBqHybOgUdoAmveipuiO.jpg","genre_ids":[28,27,878],"id":703745,"original_language":"en","original_title":"Deep
+        Blue Sea 3","overview":"Dr. Emma Collins and her team are spending their third
+        summer on the island of Little Happy studying the effect of climate change
+        on the great white sharks who come to the nearby nursery every year to give
+        birth. Along with the last two inhabitants of this former fishing village,
+        their peaceful life is disrupted when a \"scientific\" team led by her ex-boyfriend
+        and marine biologist Richard show up looking for three bull sharks who we
+        soon learn aren''t just any bull sharks.","popularity":38.9,"poster_path":"/bKthjUmxjHjvJK8FktFfQdmwP12.jpg","release_date":"2020-07-28","title":"Deep
+        Blue Sea 3","video":false,"vote_average":6.2,"vote_count":283},{"adult":false,"backdrop_path":"/9vEagP8gOhE598dj5kcak1onCOa.jpg","genre_ids":[28,35,80],"id":11001,"original_language":"en","original_title":"Blue
         Streak","overview":"Miles Logan is a jewel thief who just hit the big time
         by stealing a huge diamond. However, after two years in jail, he comes to
         find out that he hid the diamond in a police building that was being built
         at the time of the robbery. In an attempt to regain his diamond, he poses
-        as an LAPD detective.","popularity":13.864,"poster_path":"/jek2osBtFhzU6Hjj7yp1egOtbqO.jpg","release_date":"1999-09-17","title":"Blue
-        Streak","video":false,"vote_average":6.4,"vote_count":947},{"adult":false,"backdrop_path":"/mJFRhYGxCDmQ5cMnTmKwqpV0QVa.jpg","genre_ids":[12,18,10749],"id":9266,"original_language":"en","original_title":"Blue
+        as an LAPD detective.","popularity":16.806,"poster_path":"/jek2osBtFhzU6Hjj7yp1egOtbqO.jpg","release_date":"1999-09-17","title":"Blue
+        Streak","video":false,"vote_average":6.4,"vote_count":951},{"adult":false,"backdrop_path":"/l104QUm7N05UVcDjggQe3AEhGBk.jpg","genre_ids":[80],"id":4911,"original_language":"en","original_title":"Dark
+        Blue","overview":"Set during the Rodney King riots, a robbery homicide investigation
+        triggers a series of events that will cause a corrupt LAPD officer to question
+        his tactics.","popularity":12.528,"poster_path":"/9RTiJx3oD1s3RAMtjSo7ThZmcxw.jpg","release_date":"2002-12-14","title":"Dark
+        Blue","video":false,"vote_average":6.2,"vote_count":174},{"adult":false,"backdrop_path":"/sS4om4v8GbspmlRVXyTikxhTchG.jpg","genre_ids":[28,27,878],"id":8914,"original_language":"en","original_title":"Deep
+        Blue Sea","overview":"Researchers on the undersea lab Aquatica have genetically
+        altered the brains of captive sharks to develop a cure for Alzheimer''s disease.
+        But there''s an unexpected side effect: the sharks got smarter, faster, and
+        more dangerous. After a big storm damages their remote research facility,
+        they must fight for their lives.","popularity":20.008,"poster_path":"/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg","release_date":"1999-07-28","title":"Deep
+        Blue Sea","video":false,"vote_average":5.9,"vote_count":1590},{"adult":false,"backdrop_path":"/aiwNrxTMNJMRl30fWeVmSBAyXCm.jpg","genre_ids":[80,9648,53],"id":793,"original_language":"en","original_title":"Blue
+        Velvet","overview":"The discovery of a severed human ear found in a field
+        leads a young man on an investigation related to a beautiful, mysterious nightclub
+        singer and a group of criminals who have kidnapped her child.","popularity":12.886,"poster_path":"/7hlgzJXLgyECS1mk3LSN3E72l5N.jpg","release_date":"1986-09-19","title":"Blue
+        Velvet","video":false,"vote_average":7.7,"vote_count":2034},{"adult":false,"backdrop_path":"/khHv13RwbIX0g9x0Sj7j36zofJg.jpg","genre_ids":[878,28,53,80,18],"id":6341,"original_language":"en","original_title":"Blue
+        Thunder","overview":"Officer Frank Murphy, an experienced LAPD helicopter
+        pilot, is given command of the advanced new \"Blue Thunder\" chopper. But
+        he begins to wonder why the LAPD would need a helicopter so powerful and why
+        it is such a secret.","popularity":13.726,"poster_path":"/9tdoGRA7FNCuj1zhKDNLWpab9v5.jpg","release_date":"1983-02-05","title":"Blue
+        Thunder","video":false,"vote_average":6.1,"vote_count":267},{"adult":false,"backdrop_path":"/3ZohISQDjkS0PtjCJss72MFaBEj.jpg","genre_ids":[53],"id":9491,"original_language":"en","original_title":"Blue
+        Steel","overview":"Megan Turner, a female rookie cop, gets involved in an
+        armed robbery that goes awry. A witness becomes obsessed with her.","popularity":12.002,"poster_path":"/nZS8nh0q3sUHgSZGIhSnTQio5rR.jpg","release_date":"1990-03-16","title":"Blue
+        Steel","video":false,"vote_average":5.8,"vote_count":194},{"adult":false,"backdrop_path":"/mJFRhYGxCDmQ5cMnTmKwqpV0QVa.jpg","genre_ids":[12,18,10749],"id":9266,"original_language":"en","original_title":"Blue
         Crush","overview":"Nothing gets between Anne Marie and her board. Living in
         a beach shack with three roommates, she is up before dawn every morning to
         conquer the waves and count the days until the Pipe Masters competition. Having
         transplanted herself to Hawaii with no one''s blessing but her own, Anne Marie
         finds all she needs in the adrenaline-charged surf scene - until pro quarterback
-        Matt Tollman comes along...","popularity":11.704,"poster_path":"/iZSw0JVG0cIFuZoTHuQU3nmGT4k.jpg","release_date":"2002-08-08","title":"Blue
-        Crush","video":false,"vote_average":5.9,"vote_count":353},{"adult":false,"backdrop_path":"/sS4om4v8GbspmlRVXyTikxhTchG.jpg","genre_ids":[28,27,878],"id":8914,"original_language":"en","original_title":"Deep
-        Blue Sea","overview":"Researchers on the undersea lab Aquatica have genetically
-        altered the brains of captive sharks to develop a cure for Alzheimer''s disease.
-        But there''s an unexpected side effect: the sharks got smarter, faster, and
-        more dangerous. After a big storm damages their remote research facility,
-        they must fight for their lives.","popularity":17.683,"poster_path":"/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg","release_date":"1999-07-28","title":"Deep
-        Blue Sea","video":false,"vote_average":5.9,"vote_count":1586},{"adult":false,"backdrop_path":"/q7sl4qm8WlogrZ3cJxzuN8WejM1.jpg","genre_ids":[18],"id":160588,"original_language":"en","original_title":"Blue
-        Jasmine","overview":"After experiencing a traumatic misfortune, Jasmine French,
-        a wealthy woman from New York, moves to San Francisco to live with her foster
-        sister Ginger and the firm purpose of getting a new life, but she will be
-        haunted by anxiety and memories of the past.","popularity":13.216,"poster_path":"/zLdLiUJfueZBctdv8OvkmGXEHEC.jpg","release_date":"2013-07-25","title":"Blue
-        Jasmine","video":false,"vote_average":7,"vote_count":2576},{"adult":false,"backdrop_path":"/l104QUm7N05UVcDjggQe3AEhGBk.jpg","genre_ids":[80],"id":4911,"original_language":"en","original_title":"Dark
-        Blue","overview":"Set during the Rodney King riots, a robbery homicide investigation
-        triggers a series of events that will cause a corrupt LAPD officer to question
-        his tactics.","popularity":10.53,"poster_path":"/9RTiJx3oD1s3RAMtjSo7ThZmcxw.jpg","release_date":"2002-12-14","title":"Dark
-        Blue","video":false,"vote_average":6.2,"vote_count":174},{"adult":false,"backdrop_path":"/b4NubhZSvBqz2AkJH4O7JkM8XF.jpg","genre_ids":[10749,12,18],"id":5689,"original_language":"en","original_title":"The
+        Matt Tollman comes along...","popularity":11.999,"poster_path":"/iZSw0JVG0cIFuZoTHuQU3nmGT4k.jpg","release_date":"2002-08-08","title":"Blue
+        Crush","video":false,"vote_average":5.9,"vote_count":354},{"adult":false,"backdrop_path":"/we5n0E8gMY1ouGDvIvl7pdaiJvT.jpg","genre_ids":[18],"id":17740,"original_language":"en","original_title":"Powder
+        Blue","overview":"On the gritty streets of LA, the destinies of four people
+        desperate for connection and redemption are about to collide.","popularity":10.52,"poster_path":"/o1wQcqOoQQF7tt1HijnmQRLjTo4.jpg","release_date":"2009-05-08","title":"Powder
+        Blue","video":false,"vote_average":6,"vote_count":134},{"adult":false,"backdrop_path":"/b4NubhZSvBqz2AkJH4O7JkM8XF.jpg","genre_ids":[10749,12,18],"id":5689,"original_language":"en","original_title":"The
         Blue Lagoon","overview":"Two small children and a ship''s cook survive a shipwreck
         and find safety on an idyllic tropical island. Soon, however, the cook dies
         and the young boy and girl are left on their own. Days become years and Emmeline
         and Richard make a home for themselves surrounded by exotic creatures and
-        nature''s beauty. But will they ever see civilization again?","popularity":17.84,"poster_path":"/hg57Zr63A96mpIQKHxOjHYqCVhI.jpg","release_date":"1980-07-05","title":"The
-        Blue Lagoon","video":false,"vote_average":6.1,"vote_count":1220},{"adult":false,"backdrop_path":"/we5n0E8gMY1ouGDvIvl7pdaiJvT.jpg","genre_ids":[18],"id":17740,"original_language":"en","original_title":"Powder
-        Blue","overview":"On the gritty streets of LA, the destinies of four people
-        desperate for connection and redemption are about to collide.","popularity":10.582,"poster_path":"/o1wQcqOoQQF7tt1HijnmQRLjTo4.jpg","release_date":"2009-05-08","title":"Powder
-        Blue","video":false,"vote_average":6,"vote_count":133},{"adult":false,"backdrop_path":"/beA4Qrlv4FvefS4cf3AC5Qnn72n.jpg","genre_ids":[28,80,18,878,53],"id":6341,"original_language":"en","original_title":"Blue
-        Thunder","overview":"Officer Frank Murphy, an experienced LAPD helicopter
-        pilot, is given command of the advanced new \"Blue Thunder\" chopper. But
-        he begins to wonder why the LAPD would need a helicopter so powerful and why
-        it is such a secret.","popularity":11.312,"poster_path":"/9tdoGRA7FNCuj1zhKDNLWpab9v5.jpg","release_date":"1983-02-05","title":"Blue
-        Thunder","video":false,"vote_average":6.1,"vote_count":266},{"adult":false,"backdrop_path":"/qWRONAReBMtFa5HMzjO8IQnlvE2.jpg","genre_ids":[28,80,18],"id":750471,"original_language":"en","original_title":"Blue
-        Ridge","overview":".A murder in a sleepy town at the heart of the Blue Ridge
-        Mountains shocks the community and refuels a longtime feud between two families.","popularity":11.674,"poster_path":"/gF8zQR8nE3dKDv5DCabKWmWMZcb.jpg","release_date":"2020-10-20","title":"Blue
-        Ridge","video":false,"vote_average":7.5,"vote_count":2},{"adult":false,"backdrop_path":"/mcFAhNqy9N2EkHAHcPOUfEEvomJ.jpg","genre_ids":[18,10749],"id":57834,"original_language":"en","original_title":"Blue
-        Sky","overview":"Hank Marshall is a tough, square-jawed, straitlaced Army
-        engineer and nuclear science expert, assigned to help conduct weapons-testing
-        in 1950''s America. Hank has become a thorn in the side of the Army, though,
-        for a couple of very different reasons. He is an outspoken opponent of atmospheric
-        testing, though his superiors hold contrary views and want to squelch his
-        concerns...and his reports. The other problem is his wife, Carly. She is voluptuous
-        and volatile, wreaking havoc in his personal life and stirring up intrigue
-        at each new Army base.","popularity":8.641,"poster_path":"/zG40OnO4Y98lo1iDHyFo5TaZyP1.jpg","release_date":"1994-09-16","title":"Blue
-        Sky","video":false,"vote_average":6.2,"vote_count":78},{"adult":false,"backdrop_path":"/gJwq4j1UXpSs4AwKIAuEClSz68n.jpg","genre_ids":[18],"id":19819,"original_language":"en","original_title":"Blue
+        nature''s beauty. But will they ever see civilization again?","popularity":16.578,"poster_path":"/hg57Zr63A96mpIQKHxOjHYqCVhI.jpg","release_date":"1980-07-05","title":"The
+        Blue Lagoon","video":false,"vote_average":6.1,"vote_count":1222},{"adult":false,"backdrop_path":"/gwLG5V3u9WgMUodGaquvCuWM7FR.jpg","genre_ids":[18,12,10749,10770],"id":115290,"original_language":"en","original_title":"Blue
+        Lagoon: The Awakening","overview":"Two high school students become stranded
+        on a tropical island and must rely on each other for survival. They learn
+        more about themselves and each other while falling in love.","popularity":20.788,"poster_path":"/ptsBY9Aqo4Mn0V1krI5s8WfFxzW.jpg","release_date":"2014-12-08","title":"Blue
+        Lagoon: The Awakening","video":false,"vote_average":6.5,"vote_count":1020},{"adult":false,"backdrop_path":"/gJwq4j1UXpSs4AwKIAuEClSz68n.jpg","genre_ids":[18],"id":19819,"original_language":"en","original_title":"Blue
         Chips","overview":"Pete Bell, a college basketball coach is under a lot of
         pressure. His team isn''t winning and he cannot attract new players. The stars
         of the future are secretly being paid by boosters. This practice is forbidden
-        in the college game, but Pete is desperate and has pressures from all around.","popularity":9.317,"poster_path":"/tO71i4Ob64tchCRBB5MoqonPKAF.jpg","release_date":"1994-02-18","title":"Blue
-        Chips","video":false,"vote_average":6,"vote_count":104},{"adult":false,"backdrop_path":"/5UKLqsKJIhouJPVr8AQSTuh7S4n.jpg","genre_ids":[28,27,878],"id":492336,"original_language":"en","original_title":"Deep
-        Blue Sea 2","overview":"When shark conservationist Dr. Misty Calhoun is invited
-        to consult on a top-secret project run by pharmaceutical billionaire Carl
-        Durant, she is shocked to learn that the company is using unpredictable and
-        highly aggressive bull sharks as its test subjects, which soon break loose
-        and cause havoc.","popularity":18.16,"poster_path":"/xqjAHXMJLORx9vVsCTJ6ZPJcr3D.jpg","release_date":"2018-04-17","title":"Deep
-        Blue Sea 2","video":false,"vote_average":5.1,"vote_count":351},{"adult":false,"backdrop_path":"/AcEBzrNmY60gJplQnp3tYw33vu1.jpg","genre_ids":[80,53],"id":188166,"original_language":"en","original_title":"Blue
+        in the college game, but Pete is desperate and has pressures from all around.","popularity":9.945,"poster_path":"/tO71i4Ob64tchCRBB5MoqonPKAF.jpg","release_date":"1994-02-18","title":"Blue
+        Chips","video":false,"vote_average":6,"vote_count":104},{"adult":false,"backdrop_path":"/qjXyAWVOYp8t6x22OtTTz6misK4.jpg","genre_ids":[80,18,53],"id":158739,"original_language":"en","original_title":"Blue
+        Caprice","overview":"A narrative feature film inspired by the events known
+        as the Beltway sniper attacks.","popularity":9.826,"poster_path":"/PA09WH9qd69YJFoY1oNrHRw6cz.jpg","release_date":"2013-09-12","title":"Blue
+        Caprice","video":false,"vote_average":5.9,"vote_count":81},{"adult":false,"backdrop_path":"/AcEBzrNmY60gJplQnp3tYw33vu1.jpg","genre_ids":[80,53],"id":188166,"original_language":"en","original_title":"Blue
         Ruin","overview":"When the quiet life of a beach bum is upended by dreadful
         news, he sets off for his childhood home to carry out an act of vengeance.
         However, he proves an inept assassin and finds himself in a brutal fight to
-        protect his estranged family.","popularity":10.375,"poster_path":"/q0itEsso2drJXqH9kfdidxIT5dF.jpg","release_date":"2013-09-09","title":"Blue
-        Ruin","video":false,"vote_average":6.8,"vote_count":975}],"total_pages":127,"total_results":2533}'
-  recorded_at: Sat, 05 Dec 2020 18:49:54 GMT
+        protect his estranged family.","popularity":11.016,"poster_path":"/q0itEsso2drJXqH9kfdidxIT5dF.jpg","release_date":"2013-09-09","title":"Blue
+        Ruin","video":false,"vote_average":6.8,"vote_count":977},{"adult":false,"backdrop_path":null,"genre_ids":[18],"id":476656,"original_language":"en","original_title":"Elizabeth
+        Blue","overview":"A young woman, recently released from a mental hospital,
+        is coping with ongoing episodes of schizophrenia.","popularity":12.72,"poster_path":"/jyUOB2lRvrY0q9Fi97ilZPM4Zsa.jpg","release_date":"2017-09-22","title":"Elizabeth
+        Blue","video":false,"vote_average":6,"vote_count":3},{"adult":false,"backdrop_path":null,"genre_ids":[18],"id":94794,"original_language":"en","original_title":"Blue","overview":"Against
+        a plain, unchanging blue screen, a densely interwoven soundtrack of voices,
+        sound effects and music attempt to convey a portrait of Derek Jarman''s experiences
+        with AIDS, both literally and allegorically, together with an exploration
+        of the meanings associated with the colour blue.","popularity":5.753,"poster_path":"/wQffxzw30Ng8kZ0wJVTPUYRHqrm.jpg","release_date":"1993-08-19","title":"Blue","video":false,"vote_average":7,"vote_count":37}],"total_pages":127,"total_results":2536}'
+  recorded_at: Thu, 10 Dec 2020 02:31:33 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/search/movie?api_key=<TMDB_API_KEY>&page=1&query=blue
@@ -187,7 +179,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Sat, 05 Dec 2020 18:49:54 GMT
+      - Thu, 10 Dec 2020 02:28:57 GMT
       Server:
       - openresty
       Access-Control-Allow-Origin:
@@ -204,11 +196,13 @@ http_interactions:
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 c29390732f5bc4b2c7832623ae6e492f.cloudfront.net (CloudFront)
+      - 1.1 de01fb76373da7f3a402e06fd4aa8a43.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - DEN50-C2
+      - ATL56-C4
       X-Amz-Cf-Id:
-      - 53wfjYJEDNCaVNrevMNfSr5FqSu4qyevDJcMKaNHfTJWffHtz1yNgg==
+      - Ux82ZPwNAh-01ZVsGyO9zo0-iq2WUbLZEVhSRzwD4N75naHQhiGy_g==
+      Age:
+      - '156'
     body:
       encoding: ASCII-8BIT
       string: '{"page":1,"results":[{"adult":false,"backdrop_path":"/7GWDrjxeBsh5onaYf5XHjIM9BA1.jpg","genre_ids":[28,53],"id":578189,"original_language":"en","original_title":"Black
@@ -217,111 +211,101 @@ http_interactions:
         After realizing that the murder was committed by corrupt cops, she teams up
         with the one person from her community who is willing to help her as she tries
         to escape both the criminals out for revenge and the police who are desperate
-        to destroy the incriminating footage.","popularity":74.388,"poster_path":"/1cSHEKYYP8Dpi4o1iBVd4U75FYt.jpg","release_date":"2019-10-25","title":"Black
-        and Blue","video":false,"vote_average":6.7,"vote_count":412},{"adult":false,"backdrop_path":"/hIHtyIYgBqHybOgUdoAmveipuiO.jpg","genre_ids":[28,27,878],"id":703745,"original_language":"en","original_title":"Deep
-        Blue Sea 3","overview":"Dr. Emma Collins and her team are spending their third
-        summer on the island of Little Happy studying the effect of climate change
-        on the great white sharks who come to the nearby nursery every year to give
-        birth. Along with the last two inhabitants of this former fishing village,
-        their peaceful life is disrupted when a \"scientific\" team led by her ex-boyfriend
-        and marine biologist Richard show up looking for three bull sharks who we
-        soon learn aren''t just any bull sharks.","popularity":41.323,"poster_path":"/bKthjUmxjHjvJK8FktFfQdmwP12.jpg","release_date":"2020-07-28","title":"Deep
-        Blue Sea 3","video":false,"vote_average":6.2,"vote_count":282},{"adult":false,"backdrop_path":"/ajS8zeRQGjSyhbXH0d7zcV4oDCd.jpg","genre_ids":[80,18],"id":621191,"original_language":"en","original_title":"Blue
+        to destroy the incriminating footage.","popularity":64.793,"poster_path":"/1cSHEKYYP8Dpi4o1iBVd4U75FYt.jpg","release_date":"2019-10-25","title":"Black
+        and Blue","video":false,"vote_average":6.7,"vote_count":413},{"adult":false,"backdrop_path":"/ajS8zeRQGjSyhbXH0d7zcV4oDCd.jpg","genre_ids":[80,18],"id":621191,"original_language":"en","original_title":"Blue
         Story","overview":"Blue Story is a tragic tale of a friendship between Timmy
         and Marco, two young boys from opposing postcodes. Timmy, a shy, smart, naive
         and timid young boy from Deptford, goes to school in Peckham where he strikes
         up a friendship with Marco, a charismatic, streetwise kid from the local area.
         Although from warring postcodes, the two quickly form a firm friendship until
         it is tested and they wind up on rival sides of a street war. Blue Story depicts
-        elements of Rapman''s own personal experiences and aspects of his childhood.","popularity":15.087,"poster_path":"/tCkAVKsgCMgLb5r9GP4sVvMK6MR.jpg","release_date":"2019-11-22","title":"Blue
-        Story","video":false,"vote_average":7.3,"vote_count":75},{"adult":false,"backdrop_path":"/aiwNrxTMNJMRl30fWeVmSBAyXCm.jpg","genre_ids":[80,9648,53],"id":793,"original_language":"en","original_title":"Blue
-        Velvet","overview":"The discovery of a severed human ear found in a field
-        leads a young man on an investigation related to a beautiful, mysterious nightclub
-        singer and a group of criminals who have kidnapped her child.","popularity":12.965,"poster_path":"/7hlgzJXLgyECS1mk3LSN3E72l5N.jpg","release_date":"1986-09-19","title":"Blue
-        Velvet","video":false,"vote_average":7.7,"vote_count":2031},{"adult":false,"backdrop_path":"/4FLZTeVWrp14vm5wMlSJzEghDrd.jpg","genre_ids":[18,10749],"id":46705,"original_language":"en","original_title":"Blue
+        elements of Rapman''s own personal experiences and aspects of his childhood.","popularity":15.752,"poster_path":"/tCkAVKsgCMgLb5r9GP4sVvMK6MR.jpg","release_date":"2019-11-22","title":"Blue
+        Story","video":false,"vote_average":7.2,"vote_count":76},{"adult":false,"backdrop_path":"/q7sl4qm8WlogrZ3cJxzuN8WejM1.jpg","genre_ids":[18],"id":160588,"original_language":"en","original_title":"Blue
+        Jasmine","overview":"After experiencing a traumatic misfortune, Jasmine French,
+        a wealthy woman from New York, moves to San Francisco to live with her foster
+        sister Ginger and the firm purpose of getting a new life, but she will be
+        haunted by anxiety and memories of the past.","popularity":20.644,"poster_path":"/zLdLiUJfueZBctdv8OvkmGXEHEC.jpg","release_date":"2013-07-25","title":"Blue
+        Jasmine","video":false,"vote_average":7,"vote_count":2581},{"adult":false,"backdrop_path":"/4FLZTeVWrp14vm5wMlSJzEghDrd.jpg","genre_ids":[18,10749],"id":46705,"original_language":"en","original_title":"Blue
         Valentine","overview":"Dean and Cindy live a quiet life in a modest neighborhood.
         They appear to have the world at their feet at the outset of the relationship.
         However, his lack of ambition and her retreat into self-absorption cause potentially
-        irreversible cracks in their marriage.","popularity":12.57,"poster_path":"/dc8BdKnDY5Iy28KzUGtHIXuqqFK.jpg","release_date":"2010-12-16","title":"Blue
-        Valentine","video":false,"vote_average":6.9,"vote_count":2169},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":765641,"original_language":"en","original_title":"Pink
-        + Blue","overview":"The film explores the life of a transgender man, his experiences
-        of growing up, feeling different, as well as his story of coming out. The
-        ironic film challenges the idea of gender and societies view on what it means
-        to be male or female, while pushing us to sympathize with a person who does
-        not fit into those gender norms.","popularity":14.116,"poster_path":"/az8G7phTn73zXibffq2neexSSSe.jpg","release_date":"2020-12-03","title":"Pink
-        + Blue","video":false,"vote_average":0,"vote_count":0},{"adult":false,"backdrop_path":"/3ZohISQDjkS0PtjCJss72MFaBEj.jpg","genre_ids":[53],"id":9491,"original_language":"en","original_title":"Blue
-        Steel","overview":"Megan Turner, a female rookie cop, gets involved in an
-        armed robbery that goes awry. A witness becomes obsessed with her.","popularity":11.718,"poster_path":"/nZS8nh0q3sUHgSZGIhSnTQio5rR.jpg","release_date":"1990-03-16","title":"Blue
-        Steel","video":false,"vote_average":5.8,"vote_count":193},{"adult":false,"backdrop_path":"/9vEagP8gOhE598dj5kcak1onCOa.jpg","genre_ids":[28,35,80],"id":11001,"original_language":"en","original_title":"Blue
+        irreversible cracks in their marriage.","popularity":17.133,"poster_path":"/dc8BdKnDY5Iy28KzUGtHIXuqqFK.jpg","release_date":"2010-12-16","title":"Blue
+        Valentine","video":false,"vote_average":6.9,"vote_count":2179},{"adult":false,"backdrop_path":"/hIHtyIYgBqHybOgUdoAmveipuiO.jpg","genre_ids":[28,27,878],"id":703745,"original_language":"en","original_title":"Deep
+        Blue Sea 3","overview":"Dr. Emma Collins and her team are spending their third
+        summer on the island of Little Happy studying the effect of climate change
+        on the great white sharks who come to the nearby nursery every year to give
+        birth. Along with the last two inhabitants of this former fishing village,
+        their peaceful life is disrupted when a \"scientific\" team led by her ex-boyfriend
+        and marine biologist Richard show up looking for three bull sharks who we
+        soon learn aren''t just any bull sharks.","popularity":38.9,"poster_path":"/bKthjUmxjHjvJK8FktFfQdmwP12.jpg","release_date":"2020-07-28","title":"Deep
+        Blue Sea 3","video":false,"vote_average":6.2,"vote_count":283},{"adult":false,"backdrop_path":"/9vEagP8gOhE598dj5kcak1onCOa.jpg","genre_ids":[28,35,80],"id":11001,"original_language":"en","original_title":"Blue
         Streak","overview":"Miles Logan is a jewel thief who just hit the big time
         by stealing a huge diamond. However, after two years in jail, he comes to
         find out that he hid the diamond in a police building that was being built
         at the time of the robbery. In an attempt to regain his diamond, he poses
-        as an LAPD detective.","popularity":13.864,"poster_path":"/jek2osBtFhzU6Hjj7yp1egOtbqO.jpg","release_date":"1999-09-17","title":"Blue
-        Streak","video":false,"vote_average":6.4,"vote_count":947},{"adult":false,"backdrop_path":"/mJFRhYGxCDmQ5cMnTmKwqpV0QVa.jpg","genre_ids":[12,18,10749],"id":9266,"original_language":"en","original_title":"Blue
+        as an LAPD detective.","popularity":16.806,"poster_path":"/jek2osBtFhzU6Hjj7yp1egOtbqO.jpg","release_date":"1999-09-17","title":"Blue
+        Streak","video":false,"vote_average":6.4,"vote_count":951},{"adult":false,"backdrop_path":"/l104QUm7N05UVcDjggQe3AEhGBk.jpg","genre_ids":[80],"id":4911,"original_language":"en","original_title":"Dark
+        Blue","overview":"Set during the Rodney King riots, a robbery homicide investigation
+        triggers a series of events that will cause a corrupt LAPD officer to question
+        his tactics.","popularity":12.528,"poster_path":"/9RTiJx3oD1s3RAMtjSo7ThZmcxw.jpg","release_date":"2002-12-14","title":"Dark
+        Blue","video":false,"vote_average":6.2,"vote_count":174},{"adult":false,"backdrop_path":"/sS4om4v8GbspmlRVXyTikxhTchG.jpg","genre_ids":[28,27,878],"id":8914,"original_language":"en","original_title":"Deep
+        Blue Sea","overview":"Researchers on the undersea lab Aquatica have genetically
+        altered the brains of captive sharks to develop a cure for Alzheimer''s disease.
+        But there''s an unexpected side effect: the sharks got smarter, faster, and
+        more dangerous. After a big storm damages their remote research facility,
+        they must fight for their lives.","popularity":20.008,"poster_path":"/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg","release_date":"1999-07-28","title":"Deep
+        Blue Sea","video":false,"vote_average":5.9,"vote_count":1590},{"adult":false,"backdrop_path":"/aiwNrxTMNJMRl30fWeVmSBAyXCm.jpg","genre_ids":[80,9648,53],"id":793,"original_language":"en","original_title":"Blue
+        Velvet","overview":"The discovery of a severed human ear found in a field
+        leads a young man on an investigation related to a beautiful, mysterious nightclub
+        singer and a group of criminals who have kidnapped her child.","popularity":12.886,"poster_path":"/7hlgzJXLgyECS1mk3LSN3E72l5N.jpg","release_date":"1986-09-19","title":"Blue
+        Velvet","video":false,"vote_average":7.7,"vote_count":2034},{"adult":false,"backdrop_path":"/khHv13RwbIX0g9x0Sj7j36zofJg.jpg","genre_ids":[878,28,53,80,18],"id":6341,"original_language":"en","original_title":"Blue
+        Thunder","overview":"Officer Frank Murphy, an experienced LAPD helicopter
+        pilot, is given command of the advanced new \"Blue Thunder\" chopper. But
+        he begins to wonder why the LAPD would need a helicopter so powerful and why
+        it is such a secret.","popularity":13.726,"poster_path":"/9tdoGRA7FNCuj1zhKDNLWpab9v5.jpg","release_date":"1983-02-05","title":"Blue
+        Thunder","video":false,"vote_average":6.1,"vote_count":267},{"adult":false,"backdrop_path":"/3ZohISQDjkS0PtjCJss72MFaBEj.jpg","genre_ids":[53],"id":9491,"original_language":"en","original_title":"Blue
+        Steel","overview":"Megan Turner, a female rookie cop, gets involved in an
+        armed robbery that goes awry. A witness becomes obsessed with her.","popularity":12.002,"poster_path":"/nZS8nh0q3sUHgSZGIhSnTQio5rR.jpg","release_date":"1990-03-16","title":"Blue
+        Steel","video":false,"vote_average":5.8,"vote_count":194},{"adult":false,"backdrop_path":"/mJFRhYGxCDmQ5cMnTmKwqpV0QVa.jpg","genre_ids":[12,18,10749],"id":9266,"original_language":"en","original_title":"Blue
         Crush","overview":"Nothing gets between Anne Marie and her board. Living in
         a beach shack with three roommates, she is up before dawn every morning to
         conquer the waves and count the days until the Pipe Masters competition. Having
         transplanted herself to Hawaii with no one''s blessing but her own, Anne Marie
         finds all she needs in the adrenaline-charged surf scene - until pro quarterback
-        Matt Tollman comes along...","popularity":11.704,"poster_path":"/iZSw0JVG0cIFuZoTHuQU3nmGT4k.jpg","release_date":"2002-08-08","title":"Blue
-        Crush","video":false,"vote_average":5.9,"vote_count":353},{"adult":false,"backdrop_path":"/sS4om4v8GbspmlRVXyTikxhTchG.jpg","genre_ids":[28,27,878],"id":8914,"original_language":"en","original_title":"Deep
-        Blue Sea","overview":"Researchers on the undersea lab Aquatica have genetically
-        altered the brains of captive sharks to develop a cure for Alzheimer''s disease.
-        But there''s an unexpected side effect: the sharks got smarter, faster, and
-        more dangerous. After a big storm damages their remote research facility,
-        they must fight for their lives.","popularity":17.683,"poster_path":"/fyn0zyCI4kIlbDoHH0Hzv09hDC5.jpg","release_date":"1999-07-28","title":"Deep
-        Blue Sea","video":false,"vote_average":5.9,"vote_count":1586},{"adult":false,"backdrop_path":"/q7sl4qm8WlogrZ3cJxzuN8WejM1.jpg","genre_ids":[18],"id":160588,"original_language":"en","original_title":"Blue
-        Jasmine","overview":"After experiencing a traumatic misfortune, Jasmine French,
-        a wealthy woman from New York, moves to San Francisco to live with her foster
-        sister Ginger and the firm purpose of getting a new life, but she will be
-        haunted by anxiety and memories of the past.","popularity":13.216,"poster_path":"/zLdLiUJfueZBctdv8OvkmGXEHEC.jpg","release_date":"2013-07-25","title":"Blue
-        Jasmine","video":false,"vote_average":7,"vote_count":2576},{"adult":false,"backdrop_path":"/l104QUm7N05UVcDjggQe3AEhGBk.jpg","genre_ids":[80],"id":4911,"original_language":"en","original_title":"Dark
-        Blue","overview":"Set during the Rodney King riots, a robbery homicide investigation
-        triggers a series of events that will cause a corrupt LAPD officer to question
-        his tactics.","popularity":10.53,"poster_path":"/9RTiJx3oD1s3RAMtjSo7ThZmcxw.jpg","release_date":"2002-12-14","title":"Dark
-        Blue","video":false,"vote_average":6.2,"vote_count":174},{"adult":false,"backdrop_path":"/b4NubhZSvBqz2AkJH4O7JkM8XF.jpg","genre_ids":[10749,12,18],"id":5689,"original_language":"en","original_title":"The
+        Matt Tollman comes along...","popularity":11.999,"poster_path":"/iZSw0JVG0cIFuZoTHuQU3nmGT4k.jpg","release_date":"2002-08-08","title":"Blue
+        Crush","video":false,"vote_average":5.9,"vote_count":354},{"adult":false,"backdrop_path":"/we5n0E8gMY1ouGDvIvl7pdaiJvT.jpg","genre_ids":[18],"id":17740,"original_language":"en","original_title":"Powder
+        Blue","overview":"On the gritty streets of LA, the destinies of four people
+        desperate for connection and redemption are about to collide.","popularity":10.52,"poster_path":"/o1wQcqOoQQF7tt1HijnmQRLjTo4.jpg","release_date":"2009-05-08","title":"Powder
+        Blue","video":false,"vote_average":6,"vote_count":134},{"adult":false,"backdrop_path":"/b4NubhZSvBqz2AkJH4O7JkM8XF.jpg","genre_ids":[10749,12,18],"id":5689,"original_language":"en","original_title":"The
         Blue Lagoon","overview":"Two small children and a ship''s cook survive a shipwreck
         and find safety on an idyllic tropical island. Soon, however, the cook dies
         and the young boy and girl are left on their own. Days become years and Emmeline
         and Richard make a home for themselves surrounded by exotic creatures and
-        nature''s beauty. But will they ever see civilization again?","popularity":17.84,"poster_path":"/hg57Zr63A96mpIQKHxOjHYqCVhI.jpg","release_date":"1980-07-05","title":"The
-        Blue Lagoon","video":false,"vote_average":6.1,"vote_count":1220},{"adult":false,"backdrop_path":"/we5n0E8gMY1ouGDvIvl7pdaiJvT.jpg","genre_ids":[18],"id":17740,"original_language":"en","original_title":"Powder
-        Blue","overview":"On the gritty streets of LA, the destinies of four people
-        desperate for connection and redemption are about to collide.","popularity":10.582,"poster_path":"/o1wQcqOoQQF7tt1HijnmQRLjTo4.jpg","release_date":"2009-05-08","title":"Powder
-        Blue","video":false,"vote_average":6,"vote_count":133},{"adult":false,"backdrop_path":"/beA4Qrlv4FvefS4cf3AC5Qnn72n.jpg","genre_ids":[28,80,18,878,53],"id":6341,"original_language":"en","original_title":"Blue
-        Thunder","overview":"Officer Frank Murphy, an experienced LAPD helicopter
-        pilot, is given command of the advanced new \"Blue Thunder\" chopper. But
-        he begins to wonder why the LAPD would need a helicopter so powerful and why
-        it is such a secret.","popularity":11.312,"poster_path":"/9tdoGRA7FNCuj1zhKDNLWpab9v5.jpg","release_date":"1983-02-05","title":"Blue
-        Thunder","video":false,"vote_average":6.1,"vote_count":266},{"adult":false,"backdrop_path":"/qWRONAReBMtFa5HMzjO8IQnlvE2.jpg","genre_ids":[28,80,18],"id":750471,"original_language":"en","original_title":"Blue
-        Ridge","overview":".A murder in a sleepy town at the heart of the Blue Ridge
-        Mountains shocks the community and refuels a longtime feud between two families.","popularity":11.674,"poster_path":"/gF8zQR8nE3dKDv5DCabKWmWMZcb.jpg","release_date":"2020-10-20","title":"Blue
-        Ridge","video":false,"vote_average":7.5,"vote_count":2},{"adult":false,"backdrop_path":"/mcFAhNqy9N2EkHAHcPOUfEEvomJ.jpg","genre_ids":[18,10749],"id":57834,"original_language":"en","original_title":"Blue
-        Sky","overview":"Hank Marshall is a tough, square-jawed, straitlaced Army
-        engineer and nuclear science expert, assigned to help conduct weapons-testing
-        in 1950''s America. Hank has become a thorn in the side of the Army, though,
-        for a couple of very different reasons. He is an outspoken opponent of atmospheric
-        testing, though his superiors hold contrary views and want to squelch his
-        concerns...and his reports. The other problem is his wife, Carly. She is voluptuous
-        and volatile, wreaking havoc in his personal life and stirring up intrigue
-        at each new Army base.","popularity":8.641,"poster_path":"/zG40OnO4Y98lo1iDHyFo5TaZyP1.jpg","release_date":"1994-09-16","title":"Blue
-        Sky","video":false,"vote_average":6.2,"vote_count":78},{"adult":false,"backdrop_path":"/gJwq4j1UXpSs4AwKIAuEClSz68n.jpg","genre_ids":[18],"id":19819,"original_language":"en","original_title":"Blue
+        nature''s beauty. But will they ever see civilization again?","popularity":16.578,"poster_path":"/hg57Zr63A96mpIQKHxOjHYqCVhI.jpg","release_date":"1980-07-05","title":"The
+        Blue Lagoon","video":false,"vote_average":6.1,"vote_count":1222},{"adult":false,"backdrop_path":"/gwLG5V3u9WgMUodGaquvCuWM7FR.jpg","genre_ids":[18,12,10749,10770],"id":115290,"original_language":"en","original_title":"Blue
+        Lagoon: The Awakening","overview":"Two high school students become stranded
+        on a tropical island and must rely on each other for survival. They learn
+        more about themselves and each other while falling in love.","popularity":20.788,"poster_path":"/ptsBY9Aqo4Mn0V1krI5s8WfFxzW.jpg","release_date":"2014-12-08","title":"Blue
+        Lagoon: The Awakening","video":false,"vote_average":6.5,"vote_count":1020},{"adult":false,"backdrop_path":"/gJwq4j1UXpSs4AwKIAuEClSz68n.jpg","genre_ids":[18],"id":19819,"original_language":"en","original_title":"Blue
         Chips","overview":"Pete Bell, a college basketball coach is under a lot of
         pressure. His team isn''t winning and he cannot attract new players. The stars
         of the future are secretly being paid by boosters. This practice is forbidden
-        in the college game, but Pete is desperate and has pressures from all around.","popularity":9.317,"poster_path":"/tO71i4Ob64tchCRBB5MoqonPKAF.jpg","release_date":"1994-02-18","title":"Blue
-        Chips","video":false,"vote_average":6,"vote_count":104},{"adult":false,"backdrop_path":"/5UKLqsKJIhouJPVr8AQSTuh7S4n.jpg","genre_ids":[28,27,878],"id":492336,"original_language":"en","original_title":"Deep
-        Blue Sea 2","overview":"When shark conservationist Dr. Misty Calhoun is invited
-        to consult on a top-secret project run by pharmaceutical billionaire Carl
-        Durant, she is shocked to learn that the company is using unpredictable and
-        highly aggressive bull sharks as its test subjects, which soon break loose
-        and cause havoc.","popularity":18.16,"poster_path":"/xqjAHXMJLORx9vVsCTJ6ZPJcr3D.jpg","release_date":"2018-04-17","title":"Deep
-        Blue Sea 2","video":false,"vote_average":5.1,"vote_count":351},{"adult":false,"backdrop_path":"/AcEBzrNmY60gJplQnp3tYw33vu1.jpg","genre_ids":[80,53],"id":188166,"original_language":"en","original_title":"Blue
+        in the college game, but Pete is desperate and has pressures from all around.","popularity":9.945,"poster_path":"/tO71i4Ob64tchCRBB5MoqonPKAF.jpg","release_date":"1994-02-18","title":"Blue
+        Chips","video":false,"vote_average":6,"vote_count":104},{"adult":false,"backdrop_path":"/qjXyAWVOYp8t6x22OtTTz6misK4.jpg","genre_ids":[80,18,53],"id":158739,"original_language":"en","original_title":"Blue
+        Caprice","overview":"A narrative feature film inspired by the events known
+        as the Beltway sniper attacks.","popularity":9.826,"poster_path":"/PA09WH9qd69YJFoY1oNrHRw6cz.jpg","release_date":"2013-09-12","title":"Blue
+        Caprice","video":false,"vote_average":5.9,"vote_count":81},{"adult":false,"backdrop_path":"/AcEBzrNmY60gJplQnp3tYw33vu1.jpg","genre_ids":[80,53],"id":188166,"original_language":"en","original_title":"Blue
         Ruin","overview":"When the quiet life of a beach bum is upended by dreadful
         news, he sets off for his childhood home to carry out an act of vengeance.
         However, he proves an inept assassin and finds himself in a brutal fight to
-        protect his estranged family.","popularity":10.375,"poster_path":"/q0itEsso2drJXqH9kfdidxIT5dF.jpg","release_date":"2013-09-09","title":"Blue
-        Ruin","video":false,"vote_average":6.8,"vote_count":975}],"total_pages":127,"total_results":2533}'
-  recorded_at: Sat, 05 Dec 2020 18:49:54 GMT
+        protect his estranged family.","popularity":11.016,"poster_path":"/q0itEsso2drJXqH9kfdidxIT5dF.jpg","release_date":"2013-09-09","title":"Blue
+        Ruin","video":false,"vote_average":6.8,"vote_count":977},{"adult":false,"backdrop_path":null,"genre_ids":[18],"id":476656,"original_language":"en","original_title":"Elizabeth
+        Blue","overview":"A young woman, recently released from a mental hospital,
+        is coping with ongoing episodes of schizophrenia.","popularity":12.72,"poster_path":"/jyUOB2lRvrY0q9Fi97ilZPM4Zsa.jpg","release_date":"2017-09-22","title":"Elizabeth
+        Blue","video":false,"vote_average":6,"vote_count":3},{"adult":false,"backdrop_path":null,"genre_ids":[18],"id":94794,"original_language":"en","original_title":"Blue","overview":"Against
+        a plain, unchanging blue screen, a densely interwoven soundtrack of voices,
+        sound effects and music attempt to convey a portrait of Derek Jarman''s experiences
+        with AIDS, both literally and allegorically, together with an exploration
+        of the meanings associated with the colour blue.","popularity":5.753,"poster_path":"/wQffxzw30Ng8kZ0wJVTPUYRHqrm.jpg","release_date":"1993-08-19","title":"Blue","video":false,"vote_average":7,"vote_count":37}],"total_pages":127,"total_results":2536}'
+  recorded_at: Thu, 10 Dec 2020 02:31:33 GMT
 recorded_with: VCR 6.0.0
