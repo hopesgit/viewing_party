@@ -49,4 +49,14 @@ class MovieAPIService
     response = conn.get("movie/#{id}/reviews")
     JSON.parse(response.body, symbolize_names: true)[:results]
   end
+
+  def movie_similar(id)
+    response = conn.get("movie/#{id}/similar")
+    JSON.parse(response.body, symbolize_names: true)[:results]
+  end
+
+ def upcoming_movies
+    response = conn.get("movie/upcoming")
+    JSON.parse(response.body, symbolize_names: true)[:results][0..2]
+  end
 end
