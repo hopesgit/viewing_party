@@ -2,7 +2,7 @@
 
 ## About This Project
 
-Viewing party is an application in which users can explore movie options and create a viewing party event for themself and their friends. Create an account and browse for your favorite movies. Search for the most popular movies or for the specific movie you want.
+Viewing party is an application in which users can explore movie options and create a viewing party event for themself and their friends. Create an account and browse for your favorite movies. Search for the most popular movies or for the specific movie you want. Please click the Heroku link below to get started.
 
 ## Credits and Attributions:
 <img src="http://media.tumblr.com/6df8b0d6154a26601b9a3ef1c9662de7/tumblr_inline_mn2e2keoSG1qz4rgp.png" alt="build passing"/>
@@ -62,4 +62,8 @@ Viewing party is an application in which users can explore movie options and cre
 
 ## Challenges/What We Learned
 
-* [Self-referential relationships]("/misc/screenshots/Screen Shot 2020-12-09 at 10.53.40 PM.png")
+* Self-referential relationships
+<img src="/misc/screenshots/Screen Shot 2020-12-09 at 10.53.40 PM.png"/>
+* Calling APIs using API keys
+* How to keep API keys away from prying eyes
+* Testing API calls and page objects related to API info
