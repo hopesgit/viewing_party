@@ -62,4 +62,4 @@ Viewing party is an application in which users can explore movie options and cre
 
 ## Challenges/What We Learned
 
-* [Self-referential relationships](misc/screenshots/Screen Shot 2020-12-09 at 10.53.40 PM.png)
+* [Self-referential relationships]("/misc/screenshots/Screen Shot 2020-12-09 at 10.53.40 PM.png")
