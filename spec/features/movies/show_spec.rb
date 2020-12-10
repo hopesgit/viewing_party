@@ -34,6 +34,10 @@ describe "As a User" do
         expect(page).to have_css('#cast-member', count: 10)
       end
 
+      within(first('.similar')) do
+        expect(page).to have_css('.similar-movie-link')
+      end
+
       within('.reviews') do
         expect(page).to have_css('.review-author')
         expect(page).to have_css('.review-content')
